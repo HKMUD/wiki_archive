@@ -1,0 +1,218 @@
+此為一個基本運石 inmud trigger (6 trigger, 79 alias), 試行咗一日 200 次, 石料充足的話順利運行. 石料不足要 mine 時請自行調整.
+
+效能: 比 zmud trigger 略慢, 測試角色 只有 special taxue 減忙亂. 一分十多秒運一趟 (路線經長城要過大草原, 每次 reboot 要再確認其中一步)
+
+__inmud trigger 優點:__ 
+
+1. 可以加上 wedmud 20% bonus
+
+2. unset trigger_no_busycheck 自動等 busy 完先行下一步.
+
+__inmud trigger 缺點:__
+
+1. 難防 flood trigger (此版本並沒有任何 flood trigger 對應方法)
+
+2. trigger 及 alias 有上限 (trigger 大約 20 個, alias 大約 300 (好似係)), 應該有方法減少 alias 數目, 但我反正未到上限就唔改 la
+
+__以下為 6 個 trigger:__
+
+-----------------------------------------------
+觸發字符：你趕著大車到了
+
+觸發指令： scchange
+
+觸發字符：你看清楚了，這不是能驅使的車輛！
+
+觸發指令： scstepre
+
+觸發字符：你手忙腳亂的折騰了半天，可是大車一動不動。
+
+觸發指令： scstepre
+
+觸發字符：王石匠看到你押貨而來，連連點頭道：“很好！很好！就卸到這裡吧！”
+
+觸發指令： scstartover
+
+觸發字符：監工對你說道：現在還沒有多少石料呢，不忙運走，你等等吧。
+
+觸發指令：scmove
+
+觸發字符：你開始工作。
+
+觸發指令： scstart
+-----------------------------------------------
+
+__以下為 79 個 alias:__
+
+-----------------------------------------------
+sc01            = do drive cart w, alias scstepnext do sc02, alias scstepre do sc01
+
+sc02            = do drive cart nw, alias scstepnext do sc03, alias scstepre do sc02
+
+sc03            = do drive cart s, alias scstepnext do sc04, alias scstepre do sc03
+
+sc04            = do drive cart s, alias scstepnext do sc05, alias scstepre do sc04
+
+sc05            = do drive cart s, alias scstepnext do sc06, alias scstepre do sc05
+
+sc06            = do drive cart s, alias scstepnext do sc07, alias scstepre do sc06
+
+sc07            = do drive cart s, alias scstepnext do sc08, alias scstepre do sc07
+
+sc08            = do drive cart sw, alias scstepnext do sc09, alias scstepre do sc08
+
+sc09            = do drive cart sw, alias scstepnext do sc10, alias scstepre do sc09
+
+sc10            = do drive cart s, alias scstepnext do sc11, alias scstepre do sc10
+
+sc11            = do drive cart sw, alias scstepnext do sc12, alias scstepre do sc11
+
+sc12            = do drive cart sw, alias scstepnext do sc13, alias scstepre do sc12
+
+sc13            = do drive cart sw, alias scstepnext do sc14, alias scstepre do sc13
+
+sc14            = do drive cart u, alias scstepnext do sc15, alias scstepre do sc14
+
+sc15            = do drive cart nw, alias scstepnext do sc16, alias scstepre do sc15
+
+sc16            = do drive cart sw, alias scstepnext do sc17, alias scstepre do sc16
+
+sc17            = do drive cart wu, alias scstepnext do sc18, alias scstepre do sc17
+
+sc18            = do drive cart nd, alias scstepnext do sc19, alias scstepre do sc18
+
+sc19            = do drive cart sw, alias scstepnext do sc20, alias scstepre do sc19
+
+sc20            = do drive cart w, alias scstepnext do sc21, alias scstepre do sc20
+
+sc21            = do drive cart w, alias scstepnext do sc22, alias scstepre do sc21
+
+sc22            = do drive cart w, alias scstepnext do sc23, alias scstepre do sc22
+
+sc23            = do drive cart wu, alias scstepnext do sc24, alias scstepre do sc23
+
+sc24            = do drive cart wu, alias scstepnext do sc25, alias scstepre do sc24
+
+sc25            = do drive cart wu, alias scstepnext do sc26, alias scstepre do sc25
+
+sc26            = do drive cart w, alias scstepnext do sc27, alias scstepre do sc26
+
+sc27            = do drive cart nw, alias scstepnext do sc28, alias scstepre do sc27
+
+sc28            = do drive cart nu, alias scstepnext do sc29, alias scstepre do sc28
+
+sc29            = do drive cart wd, alias scstepnext do sc30, alias scstepre do sc29
+
+sc30            = do drive cart nd, alias scstepnext do sc31, alias scstepre do sc30
+
+sc31            = do drive cart nd, alias scstepnext do sc32, alias scstepre do sc31
+
+sc32            = do drive cart w, alias scstepnext do sc33, alias scstepre do sc32
+
+sc33            = do drive cart w, alias scstepnext do sc34, alias scstepre do sc33
+
+sc34            = do drive cart s, alias scstepnext do sc35, alias scstepre do sc34
+
+sc35            = do drive cart w, alias scstepnext do sc36, alias scstepre do sc35
+
+sc36            = do drive cart nw, alias scstepnext do sc37, alias scstepre do sc36
+
+sc37            = do drive cart w, alias scstepnext do sc38, alias scstepre do sc37
+
+sc38            = do drive cart nw, alias scstepnext do sc39, alias scstepre do sc38
+
+sc39            = do drive cart nu, alias scstepnext do sc40, alias scstepre do sc39
+
+sc40            = do drive cart wu, alias scstepnext do sc41, alias scstepre do sc40
+
+sc41            = do drive cart sw, alias scstepnext do sc42, alias scstepre do sc41
+
+sc42            = do drive cart sw, alias scstepnext do sc43, alias scstepre do sc42
+
+sc43            = do drive cart w, alias scstepnext do sc44, alias scstepre do sc43
+
+sc44            = do drive cart sw, alias scstepnext do sc45, alias scstepre do sc44
+
+sc45            = do drive cart d, alias scstepnext do sc46, alias scstepre do sc45
+
+sc46            = do drive cart eu, alias scstepnext do sc47, alias scstepre do sc46
+
+sc47            = do drive cart sd, alias scstepnext do sc48, alias scstepre do sc47
+
+sc48            = do drive cart e, alias scstepnext do sc49, alias scstepre do sc48
+
+sc49            = do drive cart e, alias scstepnext do sc50, alias scstepre do sc49
+
+sc50            = do drive cart e, alias scstepnext do sc51, alias scstepre do sc50
+
+sc51            = do drive cart e, alias scstepnext do sc52, alias scstepre do sc51
+
+sc52            = do drive cart s, alias scstepnext do sc53, alias scstepre do sc52
+
+sc53            = do drive cart s, alias scstepnext do sc54, alias scstepre do sc53
+
+sc54            = do drive cart s, alias scstepnext do sc55, alias scstepre do sc54
+
+sc55            = do drive cart s, alias scstepnext do sc56, alias scstepre do sc55
+
+sc56            = do drive cart e, alias scstepnext do sc57, alias scstepre do sc56
+
+sc57            = do drive cart e, alias scstepnext do sc58, alias scstepre do sc57, xxxxx
+
+sc58            = do drive cart s, alias scstepnext do sc59, alias scstepre do sc58
+
+sc59            = do drive cart se, alias scstepnext do sc60, alias scstepre do sc59
+
+sc60            = do drive cart se, alias scstepnext do sc61, alias scstepre do sc60
+
+sc61            = do drive cart e, alias scstepnext do sc62, alias scstepre do sc61
+
+sc62            = do drive cart e, alias scstepnext do sc63, alias scstepre do sc62
+
+sc63            = do drive cart e, alias scstepnext do sc64, alias scstepre do sc63
+
+sc64            = do drive cart e, alias scstepnext do sc65, alias scstepre do sc64
+
+sc65            = do drive cart s, alias scstepnext do sc66, alias scstepre do sc65
+
+sc66            = do drive cart s, alias scstepnext do sc67, alias scstepre do sc66
+
+sc67            = do drive cart e, alias scstepnext do sc68, alias scstepre do sc67
+
+sc68            = do drive cart e, alias scstepnext do sc69, alias scstepre do sc68
+
+sc69            = do drive cart s, alias scstepnext do sc70, alias scstepre do sc69
+
+sc70            = do drive cart e, alias scstepnext do sc71, alias scstepre do sc70
+
+sc71            = do drive cart s, alias scstepnext do sc01, alias scstepre do sc71
+
+scchange        = do scstep
+
+scmove          = do ask jian gong about mine,move
+
+scstart         = do set trigger_no_busycheck 0,trigger start,alias scstepre do sc01,ask jian gong about transit,alias scstartover do scstartover1
+
+scstartover     = do scstartover1
+
+scstartover1    = do trigger stop,rideto guanwai,s,se,e,trigger start,ask jian gong about count,ask jian gong about 
+transit,alias scstepre do sc01
+
+scstep          = do scstepnext
+
+scstepnext      = do sc02
+
+scstepre        = do sc01
+-----------------------------------------------
+
+註:
+
+  * 似乎 scstep 係唔需要既, 可以直接用 scstepnext 取代, 不過未再測試之前就唔改住.
+
+  * 開始時去監工度輸入 "scstart" 即可, 中途想完成做緊嗰次之後停可以 "alias scstartover" 取消 alias.
+
+  * sc57 就係 reboot 要檢查既一步 (會係 n, s, e, 其中一個方向), xxxxx 只係提自己係呢步要檢查.
+
+  * 已知有兩個位會有問題, 尤其是太多人運石時, (1) 離線練功時不能 ask jian gong about mine, (2) 同時只有一個人可以 ask jian gong about mine, 請自行調整.
+
+

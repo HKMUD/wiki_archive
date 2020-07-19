@@ -1,0 +1,31 @@
+====== 意見 ======
+
+請協助填寫曾遇到的錯誤中文編碼：[[bugword|Bug Word]]
+\\ 
+\\ 
+huwu: (1)加個人levelseal, 要達成achievement先可以升上去, 如win pantu, desert boss, train one weapon skill to 1000lv, 50000fp, do 20 task, do 20 qm, do 20 ultra quest etc.(2)set difficulty lv for fuben/boss (3) a more challenging job for reborned player involved fighting (4) qiandao 賺nt改為random daily quest,要求player做d平時少機會做既野, 例如係join battle, fight in turen, buy sth in player shop, steal sth, or other funny/moliu like changeinfo, nick etc, 等大家生活唔好咁routine
+
+ntstore/fmstore 最好加個 confirm 購買 xxx? (y/n)
+
+Charleslam：可否考慮將Guild Channel的顏色由$HIG$轉成$HIY$?因為現在Party同Guild Channel都是同一樣顏色，難免有時會混淆,Thanks.
+
+Charleslam: 可否考慮取消服用北京煉丹中的丹藥的Busy? (e.g. guiling dan, longxian dan,etc.)
+
+Swordsoul: ownequipment/ownweapon system 是否可以實行?
+
+Bufly:增加丐幫降龍原有最後一招pfm  (降龍一擊      perform xianglong),現在的十八掌名不符實呀。
+
+swordsoul: 強烈要求開放<飛天御劍流>門派!
+
+由於task bot 太多，建議每人每日最多只可以做 20~30 個big task,使其他人，由其新人可以做Big task.    <- 得果2-3個 task bot, 其他手動, 一刀斬改上限唔 make sense 囉, 諗下點樣獎勵手動玩家就真 ... and 無人fully robot, trigger只是輔助. Anyone 拎左1st item其實就完到個task, 大家有共識拎左1st item等於own個big task, robot點快都搶唔到.
+
+===== 報錯 =====
+
+[[臭蟲|匯報臭蟲]]
+
+===== 奇想 =====
+
+  - Vbman: 加入盤古族殭屍王將臣、況天佑和驅魔龍族馬氏一家
+  - Vbman: 加入鋼之鍊金術師、鋼金術及人造人
+  - Vbman: 加入一代宗師八卦掌宮二、詠春葉問、截拳道李小龍
+  - Swordsoul: 加入浪客劍心系列

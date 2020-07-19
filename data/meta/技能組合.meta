@@ -1,0 +1,5 @@
+a:2:{s:7:"current";a:6:{s:4:"date";a:2:{s:7:"created";i:1592555761;s:8:"modified";i:1579809283;}s:4:"user";s:0:"";s:7:"creator";s:0:"";s:8:"internal";a:2:{s:5:"cache";b:1;s:3:"toc";b:1;}s:11:"description";a:1:{s:8:"abstract";s:417:"雖然 help file 不可盡信, 各門派 help file 入面的技能組合真係有效既, 而且門派技能組合其實唔受門派限制, 只要有齊相關技能就得.
+
+以下整理咗 code (/adm/etc/skill_mix) 入面有效既技能組合.
+
+注意: 只要 enable 啱 force,dodge,parry 組合, skills/cha 時就會顯示技能組合, 但係唔夠所有所需技能連等級 (skill1 to skill7) 既話就會無效果.";}s:8:"relation";a:1:{s:10:"firstimage";s:0:"";}}s:10:"persistent";a:3:{s:4:"date";a:1:{s:7:"created";i:1592555761;}s:4:"user";s:0:"";s:7:"creator";s:0:"";}}

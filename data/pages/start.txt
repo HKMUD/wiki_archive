@@ -1,0 +1,61 @@
+====== HKMUD 香港群俠傳 ======
+ 
+[[更新]]　[[新手]]　[[指令]]　[[地圖]]　[[門派]]　[[幫會]]　[[奪寶]]　[[尋人]]　[[心得]]　[[表情]]　[[意見]]　[[求助]]　[[沙盒]]
+
+=== 連線資料 ===
+
+''telnet hkmud.com:8888'' 預設是 big5 編碼，配合 big5 字型便能看到正體中文。
+
+推介字型請參考 [[等寬正體中文字型]]。
+
+如有公司 block 了 port 8888，可試連接 hkmud.com port 143。
+
+=== 簡介 ===
+
+【閑聊】總舵舵主(vbman)：新站開張，內容有待添加，歡迎各位高手註冊登錄並一同編修本維基；並請善用搜尋功能。注意！本mudlib來自「泥潭6」，已非當年的「香港金庸群俠傳 HKMUD」，俱往矣！舊玩家也可到 [[http://gbman.com/hkmud/|丐幫總舵 GBMAN.COM]] 緬懷過去。
+
+=== 公告 ===
+
+**2019-12-10【閑聊】總舵舵主(vbman)：wiki終於由US搬回SGP，以後 wiki.hkmud.com 的網址會自動轉至簡短的 hkmud.com **
+
+=== 新論壇測試中 ===
+
+[[https://dev.hkmud.com]]
+可使用Google/Facebook帳號登入。
+
+=== 資料庫測試中 ===
+
+[[https://db.hkmud.com]]
+現時能顯示人物等級 >= 100 的玩家排名。
+
+=== 長期推廣 ===
+
+Web、Mobile、Desktop Apps用家可獲額外獎勵1.2倍！！！
+
+
+
+{{page>apps&nofooter&noindent}}
+
+
+=== 直播精靈(Livebot) ===
+
+直播精靈助你由第三者角度即時收看重要事件：[[https://live.hkmud.com]]
+
+=== GitHub ===
+
+從網上得來最原本的的 NT6 源碼已上載到：[[https://github.com/HKMUD/NT6]]
+
+=== SyntaxHighlighter4 plugin for DokuWiki ===
+
+本 Wiki 新增了程式碼顯示 plugin，詳情請參考 [[SyntaxHighlighter4]] 内的說明。
+
+<sxh cpp>
+#include <stdio.h>
+
+int main()
+{
+	// 我是註解。
+	printf("Hello World!");
+	return 0;
+}
+</sxh>

@@ -1,0 +1,26 @@
+a:2:{s:7:"current";a:8:{s:4:"date";a:2:{s:7:"created";i:1523211008;s:8:"modified";i:1523211008;}s:7:"creator";s:19:"總舵舵主(Vbman)";s:4:"user";s:5:"vbman";s:11:"last_change";a:8:{s:4:"date";i:1523211008;s:2:"ip";s:13:"203.218.22.46";s:4:"type";s:1:"C";s:2:"id";s:12:"系統指令";s:4:"user";s:5:"vbman";s:3:"sum";s:6:"建立";s:5:"extra";s:0:"";s:10:"sizechange";i:6685;}s:5:"title";s:12:"系統指令";s:8:"internal";a:2:{s:5:"cache";b:1;s:3:"toc";b:1;}s:11:"description";a:1:{s:8:"abstract";s:1095:"系統指令
+
+泥潭常用指令詳細解說如下：
+
+
+    本遊戲的玩家可以使用五大類指令：系統指令、聊天指令、
+冒險指令、武功指令以及特殊指令。基本指令是ＭＵＤ一般都有
+的指令，故用英文表示。括號內表示可用的命令縮寫。
+
+
+$HIY$【系統指令】$NOR$
+
+    $HIC$help$NOR$
+    指令格式：help <主題>。
+    例如：help newbie或 help intro；也可以看地圖或者門派
+說明，例如：help map或者 help map_all。 這個指令提供你針
+對某一主題的詳細說明文件，若是不指定主題，則提供你有關主
+題的文件。
+
+    $HIC$alias$NOR$
+    指令格式：alias <欲設定之指令> <系統提供之指令>。
+    有時系統所提供之指令需要輸入很長的字串, 在使用時 (尤
+其是經常用到的) 或許會感覺不方便, 此時你即可用此一指令設
+定並替代原有之指令。例如「alias sc score」就會以 sc 來取
+代score 指令。「alias」 後不加參數則列出你所有的替代指令。
+「alias sc」會消除 sc 這個替代指令…";}s:8:"relation";a:1:{s:10:"firstimage";s:0:"";}}s:10:"persistent";a:4:{s:4:"date";a:1:{s:7:"created";i:1523211008;}s:7:"creator";s:19:"總舵舵主(Vbman)";s:4:"user";s:5:"vbman";s:11:"last_change";a:8:{s:4:"date";i:1523211008;s:2:"ip";s:13:"203.218.22.46";s:4:"type";s:1:"C";s:2:"id";s:12:"系統指令";s:4:"user";s:5:"vbman";s:3:"sum";s:6:"建立";s:5:"extra";s:0:"";s:10:"sizechange";i:6685;}}}

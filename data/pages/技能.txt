@@ -1,0 +1,32 @@
+
+__此條目下 google sheet 都可以評論, 歡迎補充資料.__ 
+
+可學技能列表:
+
+不包括玩家自創武功, 共 644 個技能 (部分未驗證, 其中 5 個睇到但係學唔到)
+
+{{url>https://docs.google.com/spreadsheets/d/1ctibVip4eZbWDXPWPNjIj6YQCsmOPaWf6Mk4ugnRFH4/edit?usp=sharing 98%,600px}}
+
+[[https://docs.google.com/spreadsheets/d/1ctibVip4eZbWDXPWPNjIj6YQCsmOPaWf6Mk4ugnRFH4/edit?usp=sharing]]
+
+
+----
+
+
+可以學技能的 npc 列表 (中文名字未完成)
+
+{{url>https://docs.google.com/spreadsheets/d/1KfbsAkr3XXKg3rOE4-fgP1Q6W2hwbv7kt4yz2_ags2M/edit?usp=sharing 98%,600px}}
+
+[[https://docs.google.com/spreadsheets/d/1KfbsAkr3XXKg3rOE4-fgP1Q6W2hwbv7kt4yz2_ags2M/edit?usp=sharing]]
+
+
+----
+
+
+[[雜學]]
+
+[[知識技能大全]]
+
+[[武學技能-相關]]
+
+[[技能組合]]

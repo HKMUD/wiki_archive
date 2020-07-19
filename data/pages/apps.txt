@@ -1,0 +1,12 @@
+=== Web / Mobile Apps ===
+
+  * Web App：[[https://web.hkmud.com]] 支援桌面、手機和平板。
+  * Android App：[[https://play.google.com/store/apps/details?id=com.hkmud.web|Play Store]] 支援手機和平板。
+  * iOS App：仍未能上架，請耐心等待；可先用 Safari 開啟 [[https://web.hkmud.com]]，也可按 Share > Add to Home Screen 變成全屏幕的 Web App。
+
+=== Desktop Apps ===
+
+以下為不需要依賴瀏覽器的 64-bit 程式，是内置 Chromium 瀏覽器的 native 程式：
+  * [[http://hkmud.com/apps/HKMUD-Mac_v0.1.zip|HKMUD-Mac v0.1]]　解壓後請執行 HKMUD.app。
+  * [[http://hkmud.com/apps/HKMUD-Win_v0.1.zip|HKMUD-Win v0.1]]　解壓後請執行 HKMUD.exe。
+  * [[http://hkmud.com/apps/HKMUD-Linux_v0.1.zip|HKMUD-Linux v0.1]]　解壓後請執行 ./hkmud。

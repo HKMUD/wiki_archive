@@ -1,0 +1,14 @@
+====== 沙盒 ======
+
+歡迎在沙盒隨意測試和塗鴉
+
+
+<html>
+Test embedding html
+
+<script type="text/javascript"> alert('and javascript') </script>
+</html>
+
+[[boss2]]
+
+[[help:boss2|help:boss2]]

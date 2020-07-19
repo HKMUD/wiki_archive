@@ -1,0 +1,205 @@
+====== 百無聊賴之挑戰stone cart scheme ======
+
+==== 目標 ====
+用scheme持續跑stone cart，穩定為上，效率為次。
+
+==== 開發碎碎唸 ====
+stone cart採用固定路線，每次drive一格，失敗重試，成功則走下一格，非常機械化，理論上用scheme跑絕對可行，但玩過conditional scheme的人都會知道，scheme最大的問題是對指令成功與否的誤判：
+  * **失敗** - 100%正確判定為失敗
+  * **成功** - 大多數情況下能正確判定為成功，在罕見情況下會誤判為失敗
+
+一般的對應方法是選用一些就算在誤判情況下被重覆執行亦不會打斷bot的指令，可惜這並不適用於stone cart，因stone cart情況特殊，drive成敗的決定了接著是retry或是advance到下一格，一旦弄錯後面整條path也會亂掉，因此drive成敗判定的精準度在此至為關鍵。
+
+我採用的方法如下：
+  - drive成功會自動移動到下一個房間，可以利用下一個房間的環境去判定是否有成功移動。
+  - 為應付誤判，判定會執行三次，只要其中一次成功也會被視為成功移動。當然這不是100%保險，有可能就這麼黑仔三次都誤判，要穩陣的可以增加判定次數。
+
+移動判定各種嘗試：
+  - 走到下一個房間，stab own weapon，走回cart的房間drive，drive完測試是否能看look own weapon。問題是室內地方不能stab，用drop的話會被食環撿走，不可靠。【失敗】
+  - 改用pet，叫pet留在下一個房間讓我drive完look，可是怎樣叫stop不也聽話，死都要跟著我走。【失敗】
+  - 明教巨木旗pine砍下來的樹幹是no_get，可避免被食環撿走，但缺點是不能多個角色用同樣方法scheme。
+  - 剩下最可靠的就是look只有下一個房間有而現處房間沒有的出口。但問題又來了，有些房間沒有這樣的出口，例如石場出來後不久有一連幾個的房間都只有north和south的出口，那怎樣判辨成功移動了沒有呢？最後決定混搭著stab own weapon使用，寫得比較麻煩，勝在穩定可靠。萬幸的是需要用到stab的房間大都在室外，其中只有一個房間是例外，就是目的地的長安工部石廠，又再萬幸地這房間是non fight，用look王石匠就可以判定。
+
+以上就是我笨笨的做法，我這人想到一個可行法子就只會鑽牛角尖，很會think out of the box的高手(*point)看到了大概會笑而不語，所以希望大家留言指點，不吝賜教！！
+
+==== 【附錄】scheme & alias ====
+
+利申：
+  * 冇寫存錢，冇寫交失敗費，除了最基本的乜都冇
+  * 順利行了一日，第二日又break了，可能是被張三或野狗追殺 XD 無log無從稽考
+  * needle係我把own weapon，rideto ss係關外客店睡房。
+
+=== scheme ===
+<code>
+c0
+REPEAT
+c
+cc1:cf
+cc2:cf
+cc2:cf
+cn
+c
+cc1:cf
+cc2:cf
+cc2:cf
+cn
+c
+cc1:cf
+cc2:cf
+cc2:cf
+cn
+c
+cc1:cf
+cc2:cf
+cc2:cf
+cn
+c
+cc1:cf
+cc2:cf
+cc2:cf
+cn
+c
+cc1:cf
+cc2:cf
+cc2:cf
+cn
+c
+cc1:cf
+cc2:cf
+cc2:cf
+cn
+c
+cc1:cf
+cc2:cf
+cc2:cf
+cn
+c
+cc1:cf
+cc2:cf
+cc2:cf
+cn
+c
+cc1:cf
+cc2:cf
+cc2:cf
+cn
+c
+cc1:cf
+cc2:cf
+cc2:cf
+cn
+c
+cc1:cf
+cc2:cf
+cc2:cf
+cn
+c
+cc1:cf
+cc2:cf
+cc2:cf
+cn
+c
+cc1:cf
+cc2:cf
+cc2:cf
+cn
+LOOP
+</code>
+
+=== alias ===
+<code>
+alias cstart do rideto ss,scheme start
+alias cf1 alias cf do cf2
+alias cf2 alias cf do cf3
+alias cf3 alias cn set sign5 drive failed, retry
+alias c0 do d,e,s,e,se,e,summon needle,alias c do c1,alias cf do cf1
+alias c1 do ask jian gong about transit,drive cart w,alias cc1 l northwest,alias cc2 l northwest,alias cn alias c do c2,alias cf do cf1
+alias c2 do drive cart nw,alias cc1 l west,alias cc2 l west,alias cn alias c do c3,alias cf do cf1
+alias c3 do s,stab needle,n,drive cart s,alias cc1 get needle,alias cc2 l needle,alias cn alias c do c4,alias cf do cf1
+alias c4 do s,stab needle,n,drive cart s,alias cc1 get needle,alias cc2 l needle,alias cn alias c do c5,alias cf do cf1
+alias c5 do s,stab needle,n,drive cart s,alias cc1 get needle,alias cc2 l needle,alias cn alias c do c6,alias cf do cf1
+alias c6 do s,stab needle,n,drive cart s,alias cc1 get needle,alias cc2 l needle,alias cn alias c do c7,alias cf do cf1
+alias c7 do drive cart s,alias cc1 l southwest,alias cc2 l southwest,alias cn alias c do c8,alias cf do cf1
+alias c8 do drive cart sw,alias cc1 l northeast,alias cc2 l northeast,alias cn alias c do c9,alias cf do cf1
+alias c9 do drive cart sw,alias cc1 l south,alias cc2 l south,alias cn alias c do c10,alias cf do cf1
+alias c10 do drive cart s,alias cc1 l north,alias cc2 l north,alias cn alias c do c11,alias cf do cf1
+alias c11 do drive cart sw,alias cc1 l northeast,alias cc2 l northeast,alias cn alias c do c12,alias cf do cf1
+alias c12 do sw,stab needle,ne,drive cart sw,alias cc1 get needle,alias cc2 l needle,alias cn alias c do c13,alias cf do cf1
+alias c13 do drive cart sw,alias cc1 l up,alias cc2 l up,alias cn alias c do c14,alias cf do cf1
+alias c14 do drive cart u,alias cc1 l northwest,alias cc2 l northwest,alias cn alias c do c15,alias cf do cf1
+alias c15 do drive cart nw,alias cc1 l southwest,alias cc2 l southwest,alias cn alias c do c16,alias cf do cf1
+alias c16 do drive cart sw,alias cc1 l westup,alias cc2 l westup,alias cn alias c do c17,alias cf do cf1
+alias c17 do drive cart wu,alias cc1 l eastdown,alias cc2 l eastdown,alias cn alias c do c18,alias cf do cf1
+alias c18 do drive cart nd,alias cc1 l southwest,alias cc2 l southwest,alias cn alias c do c19,alias cf do cf1
+alias c19 do drive cart sw,alias cc1 l west,alias cc2 l west,alias cn alias c do c20,alias cf do cf1
+alias c20 do drive cart w,alias cc1 l north,alias cc2 l north,alias cn alias c do c21,alias cf do cf1
+alias c21 do w,stab needle,e,drive cart w,alias cc1 get needle,alias cc2 l needle,alias cn alias c do c22,alias cf do cf1
+alias c22 do drive cart w,alias cc1 l westup,alias cc2 l westup,alias cn alias c do c23,alias cf do cf1
+alias c23 do drive cart wu,alias cc1 l eastdown,alias cc2 l eastdown,alias cn alias c do c24,alias cf do cf1
+alias c24 do wu,stab needle,ed,drive cart wu,alias cc1 get needle,alias cc2 l needle,alias cn alias c do c25,alias cf do cf1
+alias c25 do drive cart wu,alias cc1 l west,alias cc2 l west,alias cn alias c do c26,alias cf do cf1
+alias c26 do drive cart w,alias cc1 l northwest,alias cc2 l northwest,alias cn alias c do c27,alias cf do cf1
+alias c27 do drive cart nw,alias cc1 l northup,alias cc2 l northup,alias cn alias c do c28,alias cf do cf1
+alias c28 do drive cart nu,alias cc1 l up,alias cc2 l up,alias cn alias c do c29,alias cf do cf1
+alias c29 do drive cart wd,alias cc1 l northdown,alias cc2 l northdown,alias cn alias c do c30,alias cf do cf1
+alias c30 do drive cart nd,alias cc1 l southup,alias cc2 l southup,alias cn alias c do c31,alias cf do cf1
+alias c31 do drive cart nd,alias cc1 l west,alias cc2 l west,alias cn alias c do c32,alias cf do cf1
+alias c32 do drive cart w,alias cc1 l east,alias cc2 l east,alias cn alias c do c33,alias cf do cf1
+alias c33 do drive cart w,alias cc1 l south,alias cc2 l south,alias cn alias c do c34,alias cf do cf1
+alias c34 do drive cart s,alias cc1 l west,alias cc2 l west,alias cn alias c do c35,alias cf do cf1
+alias c35 do drive cart w,alias cc1 l up,alias cc2 l up,alias cn alias c do c36,alias cf do cf1
+alias c36 do drive cart nw,alias cc1 l west,alias cc2 l west,alias cn alias c do c37,alias cf do cf1
+alias c37 do drive cart w,alias cc1 l northwest,alias cc2 l northwest,alias cn alias c do c38,alias cf do cf1
+alias c38 do drive cart nw,alias cc1 l northup,alias cc2 l northup,alias cn alias c do c39,alias cf do cf1
+alias c39 do drive cart nu,alias cc1 l westup,alias cc2 l westup,alias cn alias c do c40,alias cf do cf1
+alias c40 do drive cart wu,alias cc1 l southwest,alias cc2 l southwest,alias cn alias c do c41,alias cf do cf1
+alias c41 do drive cart sw,alias cc1 l northeast,alias cc2 l northeast,alias cn alias c do c42,alias cf do cf1
+alias c42 do drive cart sw,alias cc1 l west,alias cc2 l west,alias cn alias c do c43,alias cf do cf1
+alias c43 do drive cart w,alias cc1 l southwest,alias cc2 l southwest,alias cn alias c do c44,alias cf do cf1
+alias c44 do drive cart sw,alias cc1 l northeast,alias cc2 l northeast,alias cn alias c do c45,alias cf do cf1
+alias c45 do drive cart d,alias cc1 l eastup,alias cc2 l eastup,alias cn alias c do c46,alias cf do cf1
+alias c46 do drive cart eu,alias cc1 l westdown,alias cc2 l westdown,alias cn alias c do c47,alias cf do cf1
+alias c47 do drive cart nd,alias cc1 l southup,alias cc2 l southup,alias cn alias c do c48,alias cf do cf1
+alias c48 do drive cart se,alias cc1 l east,alias cc2 l east,alias cn alias c do c49,alias cf do cf1
+alias c49 do drive cart e,alias cc1 l northeast,alias cc2 l northeast,alias cn alias c do c50,alias cf do cf1
+alias c50 do drive cart ne,alias cc1 l southwest,alias cc2 l southwest,alias cn alias c do c51,alias cf do cf1
+alias c51 do drive cart ne,alias cc1 l east,alias cc2 l east,alias cn alias c do c52,alias cf do cf1
+alias c52 do drive cart e,alias cc1 l south,alias cc2 l south,alias cn alias c do c53,alias cf do cf1
+alias c53 do drive cart s,alias cc1 l north,alias cc2 l north,alias cn alias c do c54,alias cf do cf1
+alias c54 do sw,stab needle,ne,drive cart sw,alias cc1 get needle,alias cc2 l needle,alias cn alias c do c55,alias cf do cf1
+alias c55 do drive cart s,alias cc1 l southeast,alias cc2 l southeast,alias cn alias c do c56,alias cf do cf1
+alias c56 do drive cart se,alias cc1 l east,alias cc2 l east,alias cn alias c do c57,alias cf do cf1
+alias c57 do drive cart e,alias cc1 l west,alias cc2 l west,alias cn alias c do c58,alias cf do cf1
+alias c58 do drive cart se,alias cc1 l northwest,alias cc2 l northwest,alias cn alias c do c59,alias cf do cf1
+alias c59 do drive cart se,alias cc1 l east,alias cc2 l east,alias cn alias c do c60,alias cf do cf1
+alias c60 do drive cart s,alias cc1 l north,alias cc2 l north,alias cn alias c do c61,alias cf do cf1
+alias c61 do drive cart s,alias cc1 l west,alias cc2 l west,alias cn alias c do c62,alias cf do cf1
+alias c62 do drive cart s,alias cc1 l east,alias cc2 l east,alias cn alias c do c63,alias cf do cf1
+alias c63 do s,stab needle,n,drive cart s,alias cc1 get needle,alias cc2 l needle,alias cn alias c do c64,alias cf do cf1
+alias c64 do s,stab needle,n,drive cart s,alias cc1 get needle,alias cc2 l needle,alias cn alias c do c65,alias cf do cf1
+alias c65 do drive cart s,alias cc1 l southeast,alias cc2 l southeast,alias cn alias c do c66,alias cf do cf1
+alias c66 do drive cart se,alias cc1 l south,alias cc2 l south,alias cn alias c do c67,alias cf do cf1
+alias c67 do drive cart s,alias cc1 l north,alias cc2 l north,alias cn alias c do c68,alias cf do cf1
+alias c68 do drive cart s,alias cc1 l east,alias cc2 l east,alias cn alias c do c69,alias cf do cf1
+alias c69 do w,stab needle,e,drive cart w,alias cc1 get needle,alias cc2 l needle,alias cn alias c do c70,alias cf do cf1
+alias c70 do drive cart w,alias cc1 l northwest,alias cc2 l northwest,alias cn alias c do c71,alias cf do cf1
+alias c71 do drive cart nw,alias cc1 l southeast,alias cc2 l southeast,alias cn alias c do c72,alias cf do cf1
+alias c72 do drive cart w,alias cc1 l east,alias cc2 l east,alias cn alias c do c73,alias cf do cf1
+alias c73 do w,stab needle,e,drive cart w,alias cc1 get needle,alias cc2 l needle,alias cn alias c do c74,alias cf do cf1
+alias c74 do drive cart w,alias cc1 l south,alias cc2 l south,alias cn alias c do c75,alias cf do cf1
+alias c75 do w,stab needle,e,drive cart w,alias cc1 get needle,alias cc2 l needle,alias cn alias c do c76,alias cf do cf1
+alias c76 do drive cart w,alias cc1 l south,alias cc2 l south,alias cn alias c do c77,alias cf do cf1
+alias c77 do s,stab needle,n,drive cart s,alias cc1 get needle,alias cc2 l needle,alias cn alias c do c78,alias cf do cf1
+alias c78 do drive cart s,alias cc1 l west,alias cc2 l west,alias cn alias c do c79,alias cf do cf1
+alias c79 do drive cart w,alias cc1 l south,alias cc2 l south,alias cn alias c do c80,alias cf do cf1
+alias c80 do w,stab needle,e,drive cart w,alias cc1 get needle,alias cc2 l needle,alias cn alias c do c81,alias cf do cf1
+alias c81 do s,stab needle,n,drive cart s,alias cc1 get needle,alias cc2 l needle,alias cn alias c do c82,alias cf do cf1
+alias c82 do drive cart e,alias cc1 l west,alias cc2 l west,alias cn alias c do c83,alias cf do cf1
+alias c83 do drive cart s,alias cc1 l wang shijiang,alias cc2 l wang shijiang,alias cn alias c do c84,alias cf do cf1
+alias c84 do n,w,n,e,e,n,n,e,e,e,e,e,se,e,e,alias cc1 unset sign5,alias cc2 unset sign5,alias cn alias c do c85
+alias c85 do n,n,nw,n,n,n,n,n,n,nw,nw,w,nw,n,ne,alias cc1 unset sign5,alias cc2 unset sign5,alias cn alias c do c86
+alias c86 do n,w,sw,sw,w,nw,su,wd,u,ne,e,ne,ne,ed,sd,alias cc1 unset sign5,alias cc2 unset sign5,alias cn alias c do c87
+alias c87 do se,e,se,e,n,e,e,su,su,eu,sd,se,e,ed,ed,alias cc1 unset sign5,alias cc2 unset sign5,alias cn alias c do c88
+alias c88 do ed,e,e,e,ne,su,ed,ne,se,d,ne,ne,ne,n,ne,alias cc1 unset sign5,alias cc2 unset sign5,alias cn alias c do c89
+alias c89 do ne,n,n,n,n,n,se,e,alias cc1 unset sign5,alias cc2 unset sign5,alias cn alias c do c1
+</code>

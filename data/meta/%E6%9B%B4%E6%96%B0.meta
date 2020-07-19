@@ -1,0 +1,15 @@
+a:2:{s:7:"current";a:9:{s:4:"date";a:2:{s:7:"created";i:1528241263;s:8:"modified";i:1540996783;}s:7:"creator";s:10:"Simon Chow";s:4:"user";s:5:"admin";s:11:"last_change";a:8:{s:4:"date";i:1540996783;s:2:"ip";s:12:"58.153.5.171";s:4:"type";s:1:"E";s:2:"id";s:6:"更新";s:4:"user";s:5:"admin";s:3:"sum";s:10:"[2018-10] ";s:5:"extra";s:0:"";s:10:"sizechange";i:103;}s:11:"contributor";a:1:{s:5:"admin";s:10:"Simon Chow";}s:5:"title";s:12:"最近更新";s:11:"description";a:2:{s:15:"tableofcontents";a:8:{i:0;a:4:{s:3:"hid";s:13:"section201810";s:5:"title";s:7:"2018-10";s:4:"type";s:2:"ul";s:5:"level";i:1;}i:1;a:4:{s:3:"hid";s:13:"section201809";s:5:"title";s:7:"2018-09";s:4:"type";s:2:"ul";s:5:"level";i:1;}i:2;a:4:{s:3:"hid";s:13:"section201808";s:5:"title";s:7:"2018-08";s:4:"type";s:2:"ul";s:5:"level";i:1;}i:3;a:4:{s:3:"hid";s:13:"section201807";s:5:"title";s:7:"2018-07";s:4:"type";s:2:"ul";s:5:"level";i:1;}i:4;a:4:{s:3:"hid";s:13:"section201806";s:5:"title";s:7:"2018-06";s:4:"type";s:2:"ul";s:5:"level";i:1;}i:5;a:4:{s:3:"hid";s:13:"section201805";s:5:"title";s:7:"2018-05";s:4:"type";s:2:"ul";s:5:"level";i:1;}i:6;a:4:{s:3:"hid";s:13:"section201804";s:5:"title";s:7:"2018-04";s:4:"type";s:2:"ul";s:5:"level";i:1;}i:7;a:4:{s:3:"hid";s:13:"section201803";s:5:"title";s:7:"2018-03";s:4:"type";s:2:"ul";s:5:"level";i:1;}}s:8:"abstract";s:393:"最近更新
+
+2018-10
+
+2018-10-31 vbman:
+
+	*  釣魚試驗性重開，釣魚訊息只有自己看到，取消了平靜busy。
+
+2018-10-18 vbman:
+
+	*  再次暫停釣魚系統徹查high cpu usage問題。
+
+2018-10-16 vbman:
+
+	*  重新開放釣魚，釣到的魚獲不再有實體，獎賞會有輕微delay，欲垂釣時有機會要等待心境平靜才能開始，請調整各自的trigger。";}s:8:"internal";a:2:{s:5:"cache";b:1;s:3:"toc";b:1;}s:8:"relation";a:1:{s:10:"firstimage";s:0:"";}}s:10:"persistent";a:5:{s:4:"date";a:2:{s:7:"created";i:1528241263;s:8:"modified";i:1540996783;}s:7:"creator";s:10:"Simon Chow";s:4:"user";s:5:"admin";s:11:"last_change";a:8:{s:4:"date";i:1540996783;s:2:"ip";s:12:"58.153.5.171";s:4:"type";s:1:"E";s:2:"id";s:6:"更新";s:4:"user";s:5:"admin";s:3:"sum";s:10:"[2018-10] ";s:5:"extra";s:0:"";s:10:"sizechange";i:103;}s:11:"contributor";a:1:{s:5:"admin";s:10:"Simon Chow";}}}

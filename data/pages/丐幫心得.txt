@@ -1,0 +1,77 @@
+====== 主要路徑:  ======
+
+**青竹林走法:** 
+揚洲東門-> do n, e, n, w, n, e, w, n
+
+走丐幫秘道2號出口亦可
+
+
+**丐幫秘道相連位置:** (yangzhou, cs, enter dong, say 天堂有路你不走呀, down)
+
+0: 岳揚 yueyang
+1: 華山村
+2: 青竹林 土地廟 
+3: 少林山腳
+4: 西域 絲路
+5: 三不管
+6: 華山
+7: 北京
+8: 嘉興
+9: 血刀門
+a: 大理城
+b: 福建
+c: 無錫
+f: 成都
+
+
+====== 丐幫人物位置:  ======
+
+{{url>https://docs.google.com/spreadsheets/d/190DcQI7G8osGVApBqX1N_72qhebRwKYGb34oZ-ykgbg/edit?usp=sharing 1000%,950px}}
+
+[[https://docs.google.com/spreadsheets/d/190DcQI7G8osGVApBqX1N_72qhebRwKYGb34oZ-ykgbg/edit?usp=sharing]]
+
+
+
+====== 如何昇袋:  ======
+  - 經驗 > 10000
+  - 到青竹林找簡長老, ask jian about 青竹令
+  - **隨便找一個跟自己同袋數之丐幫npc** , give xxx ling, 然後打7佢, 打嬴會給你破布
+  - 回簡長老處, give jian pobu
+
+
+====== 如何學降龍十八掌(dragon-strike):  ======
+學習條件: 
+  * 洪七公弟子, 丐幫九袋以上
+  * 正神 >= 80000
+  * 先力臂力 >= 31 及 後天臂力 >= 45
+  * 先力根骨 >= 24 及 後天根骨 >= 37
+  * 根本內功 >= 150, 內力 >= 1500 , 基本掌法 >= 30
+
+學習方法:
+  * 從**魯有腳身上拿到叫化雞**, 給洪七公後, xue hong dragon-strike
+  * 將自動學會18招分散的掌法, 各招練習到一定等級後, yanlian dragon-strike
+  * **丐幫轉世後可找喬峰直接學dragon-strike**
+
+====== 可學之perform:  ======
+  * 魯有腳 可學  纏身決 perform shexing-diaoshou.chan (蛇形刁手現時須會蛤蟆功才可習得)
+  * 彭有敬 群魔亂舞 perform fengmo-zhang.luan 及 攝心術   yun huntian-qigong.shexin 
+  * "樑"長老 閃刀訣 perform liuhe-dao.shan
+  * 白世鏡 纏絲擒拿 perform chansi-shou.qin
+  * 吳長風 烏龍探海 perform liuhe-zhang.tan 及 閃刀訣 perform liuhe-dao.shan
+  * 奚長老 風火輪 perform fumo-zhang.lun
+  * 馬大元 鐵爪鎖喉 perform suohou-gong.suo
+  * 洪七公 可學 :   
+    * 仙遊訣 perform xiaoyaoyou.xian      (正氣 >= 10000,  功積 300)
+    * 擲金針 perform pomie-jinzhen.du     (正氣 >= 10000,  功積 500)
+    * 纏字訣 perform dagou-bang.chan      (正氣 >= 80000,  功積 300)
+    * 戳字訣 perform dagou-bang.chuo      (正氣 >= 80000,  功積 600)
+    * 封字訣 perform dagou-bang.feng      (正氣 >= 80000,  功積 1700)
+    * 絆字訣 perform dagou-bang.ban       (正氣 >= 100000, 功積 1800)
+    * 擒龍手 perform dragon-strike.qin    (正氣 >= 100000, 功積 800)
+    * 雷霆一擊 perform dragon-strike.lei  (正氣 >= 100000, 功積 2000)
+    * 龍翔九天 perform dragon-strike.xiang(正氣 >= 100000, 功積 3000)
+    * 亢龍有悔 perform dragon-strike.hui  (正氣 >= 120000, 功積 3000)
+    * 排山倒海 perform dragon-strike.pai  (正氣 >= 120000, 功積 1000)
+    * 龍嘯九天 perform dragon-strike.xiao (正氣 >= 8000000, 功積 10000) (轉世後可學, 習得後加先天臂力1點)
+    * 天下無狗 perform dagou-bang.tian (ask hong 天下無狗, 得打狗棒譜, lingwu dgb book 多次直到完全領悟)
+

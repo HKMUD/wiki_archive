@@ -1,0 +1,4 @@
+====== 巫師筆記 ======
+
+  - /clone/user/user.c 使用自己的 varargs mixed set(string idx, mixed para, object ob)，override 了 efun set(string,mixed,object)；内有 combat_exp、xiantian_zhengqi、name 的 set hook。
+  - /feature/dbase.c 沒提供 query、addn、set、set_temp... 等 func，所以 call_other(ob, "query") 根本就找不到 ob->query 這 func，也不會自動換成 call efun::query(idx, ob)，因此很多 ob->query、ob->set... 其實無效果；巫師的工具 /cmds/arch/call.c 也要特別處理才做到這種 redirection。不明白為什麼 es2、xkx100 入面的 /feature/dbase.c 都有 query、delete、set 來到 NT6 刪剩了 add。

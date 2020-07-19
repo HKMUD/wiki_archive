@@ -1,0 +1,4 @@
+====== Bug Word ======
+請協助在此 [[https://docs.google.com/spreadsheets/d/14dWEEze_lsL1Y2wp30a9z0wh-agclj_uUXrv6f-G-mM/edit#gid=1423913217|Google Sheet]] 填寫曾遇到的錯誤中文編碼，謝謝！
+
+{{url>https://docs.google.com/spreadsheets/d/14dWEEze_lsL1Y2wp30a9z0wh-agclj_uUXrv6f-G-mM/edit#gid=1423913217 98%,800px}}

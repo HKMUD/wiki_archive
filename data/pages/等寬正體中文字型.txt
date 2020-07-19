@@ -1,0 +1,22 @@
+====== 等寬正體中文字型 ======
+
+==== 微軟雅黑體 (Mono CP950) ====
+使用此特製的微軟雅黑體 + 開啟 ClearType，Windows 就能有較漂亮的等寬中文顯示。
+
+下載：[[http://hkmud.com/fonts/MicrosoftYaHeiMono-CP950.ttf|Microsoft YaHei Mono CP950]]
+
+預覽 (18pt)：\\ 
+{{: microsoftyaheimonocp950demo18px1800.png|}}
+
+==== Noto Sans Mono CJK TC Regular ====
+此字型適合 Mac/Linux 的 Terminal 或 TinTin++ 使用，也是 WEBMUD 採用的字型。
+
+在 Windows 的 Zmud 或 MUSHclient 上使用雖然中文字能顯示為 mono，但對空白格的解析卻不是 mono，會略有移位的情況，但仍是非常好看的字型。
+
+下載：[[http://hkmud.com/fonts/NotoSansMonoCJKTC-Regular.otf|Noto Sans Mono CJK TC Regular]]
+
+預覽 (18pt)：\\ 
+{{:notosansmonocjktcregulardemo.png|}}
+
+==== 細明體 ====
+細明體(MingLiu) 是 Windows 最基本的 Big5 Monospace 字型，但未必是最美觀的選擇。

@@ -1,0 +1,20 @@
+====== Telegram Chatbot ======
+
+使用 Telegram Chatbot 可以用 Telegram App 跟 HKMUD 雙向聊天：
+  - 請下載 [[https://telegram.org/|Telegram App]]，支援各種平台包括 Windows、Mac、iOS、Android、Linux、WP 及 Web。
+  - 首次使用請到 Settings > Edit > 設定一個自己喜歡又未有人用的 @username。
+  - 搜尋 hkmudbot 或在瀏覽器開啟 [[https://t.me/hkmudbot]] 開啟 Chatbot 對話。
+  - 首次開啟後請按 start 或輸入 /start，便能開始接收訊息。 
+
+==== 登記發言 ====
+如要發言，請到此 [[https://docs.google.com/spreadsheets/d/14dWEEze_lsL1Y2wp30a9z0wh-agclj_uUXrv6f-G-mM/edit?usp=sharing|Google Sheet]] 登記 Telegram @username，然後等待 admin 核准。
+{{url>https://docs.google.com/spreadsheets/d/14dWEEze_lsL1Y2wp30a9z0wh-agclj_uUXrv6f-G-mM/edit?usp=sharing 98%,800px}}
+
+==== 使用簡介 ====
+  * 直接打字便能出 chat。
+  * 可用 chat* <emote> [<target>] 出表情。
+  * 可用 rumor、party、guild 在各頻道發言和使用 emote。
+  * 可輸入 /who 來看誰在線上。
+  * 可輸入 /tune 查看正在收看的頻道，輸入 /tune <channel> 可設定收看或不看某頻道。
+
+

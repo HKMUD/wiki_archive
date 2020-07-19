@@ -1,0 +1,43 @@
+[[start|首　頁]] 
+
+[[更新|更　新]] 
+
+[[心得|心　得]] 
+
+[[指令|指　令]] 
+
+[[地圖|地　圖]] 
+
+[[門派|門　派]] 
+
+[[幫會|幫　會]] 
+
+[[意見|意　見]] 
+
+=== 客戶端 ===
+
+[[Apps]]
+
+[[https://web.hkmud.com/|Webmud]]
+
+[[https://live.hkmud.com/|Livebot]]
+
+=== 社　群 ===
+
+[[telegramchatbot|Telegram]]
+
+[[https://db.hkmud.com|資料庫]]
+
+[[https://dev.hkmud.com|論　壇]]
+
+[[https://www.facebook.com/groups/5782635681/|Facebook]]
+
+[[https://www.youtube.com/channel/UCJshsQ35R_ZoomVEBNglUzQ|YouTube]]
+
+=== 編　程 ===
+
+[[巫師筆記]] 
+
+[[https://fluffos.github.io/doc/efun/|EFUN]]
+
+[[https://github.com/HKMUD/NT6|GitHub]]

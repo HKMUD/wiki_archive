@@ -1,0 +1,80 @@
+【新聞】xx:xx xxx(xxx)的xxx已經達到了xxx的境界（當今武林第一人）。x n
+最近比較少發生, 但有時會見高手瞬間學到好多級. 以下介紹點樣做到.
+
+本 mud 所有技能在 0 lv 時最易升級, 所以一開始加盡【學習效果】, xue <master> <skill> <max no> 就可以瞬間幾百甚至幾千 lv, 不受師父等級限制.
+study book 同樣原理, 加盡【讀書效果】(雖然 stats 睇唔到), 0 lv 時 study <book> <max no> 亦可無視書本等級限制, 不過讀書次數較少, 應該最多去到幾百 lv.
+
+【學習效果】和【讀書效果】都可以用兩個半套 wisdom set 簡單去到 450% 以上
+
+green wisdom set: ntstore buy 36, 好貴的, 建議簽到直到有88折先買 (首次登記用 telegram vbman 會送 1000 nt), 同埋買完 **記得 upd, 記得 upd, 記得 upd !** 咁意外死亡都可以 summon 返.
+
+  * ( 36) 文曲星禮包 wisdom 360 禮包 禮包裡有文曲星7件套裝，+240%的學習、研究等效果，同時加200後天悟性 (註: 應為 240 後天悟性)
+  * ( 23) 干將聖符 ganjiang 2 神符 可將裝備及勛章設置為可SUMMON屬性
+
+white wisdom set: char lv 10 之後可裝備, 可以 rideto player shop 睇睇有無得買或者直接在 guild/chat 度問
+
+【學習效果】: <green> waist + boots + heads + <white> 任何其他三件 = 10% x 3 + 240% + 180% = 450% (新手悟性唔高的話可能 full green set 既悟性 bonus 會更有效)
+
+【讀書效果】: <green> armor + cloth + wrists + surcoat + <white> waist + boots + head = 10% x 4 + 240% + 180% = 460%
+
+學習次數可買
+
+  * ( 7) 紫金學習勛章 learn 60 物品 提升每次學習次數300
+  * ( 34) 天賦聰穎 clever 20 先天技能 先天技能，最多可購買八個
+
+十倍 bonus (暫時常駐) 之下可學 5500 次
+
+另外高 武學修養(martial-cognize) 等級亦會令武學技能學習難度降低.
+
+由於 釣魚 job 不需任何技能(詳見 cake 的新手指南), 可以先 ro 到 40 lv 以上 (先用 dummy 做 task 收齊刑天套裝更好), <del>拾冰</del>運石賺體會 derive limit martial-cognize. 加上幾千級 literate 之後即可輕鬆練技能.
+
+
+----
+
+公共技能學習方法
+
+help pub_skill 入面寫既大致上都應該無錯既以下補充幾點
+
+  - 空手基本技能 unarmed, finger, strike, hand, claw, cuff 都可以去六和塔揾陳家洛學. 但留意必須先成功學到百花錯拳(即是要少過 200 lv, 見到"陳家洛看了看你，點點頭道：你我既然如此有緣，我就傳授你百花錯拳。"之後), 之後才可以學其他技能, quit/reboot 之後要重新再學百花錯拳. 唔想再上過塔頂就要確定符合先天要求先上去.百花錯拳: 28 int 23 dex, 學齊 perform: 68k shen 莊子舞: 26 dex, 學 perform: 40k shen, 另外好似要 180 lv 以上先可以 practice
+  - 所有武器基本技能都可以去哈薩克草場 (rideto yili, s, s, sw, e, eu, ed, e, su) wield 相應武器 dui gancao 練到 120 lv, wear xt 之後就可以 research
+  - 神行百變不需要"拿到玄鐵匕首", wield 任何刀劍類武器都可以 ci wall, 或者直接殺 lama 再 w, e 都可以
+  - 鐵掌掌法無開放做 public skill, 要入鐵掌幫
+  - 碧針清掌, 玄鐵令除等故事外, 亦可解謎得到, 先在摩天崖附近(do rideto foshan,n,n,nu,nd,w,s,n) 殺樵夫(qiao fu) 拿 柴刀(cut knife), 再去俠客島找張三李四, 在附近殺豬, 切豬腿, 給張三李四, 拿到玄冰碧火酒, 之後在俠客島入面找到石破天給他玄冰碧火酒就可得到玄鐵令. 另外可向石破天學 huntian-qigong, xianglong-zhang, xiaoyaoyou, begging, checking
+  - 祁連五絕指: 無開放
+  - 胡家拳法: 好似要胡家弟子才可讀胡家拳經
+  - 五虎斷門刀: 加入天地會,找李力世學習即可。 加入天地會(留意要正神,否則會畀陳近南 autokill) 後可找玄貞道長 (rideto beijing, w, w, w, s, s, s, s, s) 學齊雲龍門幾乎所有 skill: 雲龍鞭法 (yunlong-bian) 雲龍劍 (yunlong-jian) 雲龍身法 (yunlong-shenfa) 雲龍神功 (yunlong-shengong) 雲龍手 (yunlong-shou) 雲龍爪 (yunlong-zhua) 另加 雲龍心法 (yunlong-xinfa) , 不過無得學 perform (其實拜入雲龍以上技能都係無 perform 可以學)
+
+
+----
+
+
+另外仲有 help pub_skill 無提既 public (或者話無限制門派) skills,
+用途可以 "checkskill <skill name>" 查到, 大部分技能只有特定門派先可以學 pfm
+
+  - 神照经 (shenzhaojing) (在 http://www.17mud.com/topic-guide.html 找到的, 照抄過嚟)要求：force > 200，unarmed > 200，最大内力 > 4000路径：先到荆州（r jingzhou;e;e;e;e;n）拿野菊花（随机刷出来，不一定每次都有），然后一路杀进荆州衙门，把花给菊友，她会给你一把钥匙，回到衙门后院，unlock men，打开东厢门，见到凌霜华，ask ling about 丁典，她会告诉你要闭气，这个时候可以进花园去把绿菊花捡起来(没问会中毒死掉)，然后到衙门正厅open door找到丁典，把花给他，他就会给你神照经。(應該係可以直接學, 神 照 經 (shenzhaojing) 小丁氣功 (ding-force) 丁 字 步 (ding-dodge) 一橫一勾拳 (ding-unarmed) )
+  - 幾乎所有凌宵城武功:在凌宵城找到阿繡 (rideto lingxiao,w,nu,nu,n,w), ask about 金烏杖, 找史婆婆 (rideto yangzhou, s, s, s, s), give it to shi 即可學任何技能無妄神功 (wuwang-shengong) 雪山內功 (xueshan-neigong) 雲鶴七劍 (yunhe-jian) 寒梅劍法 (hanmei-jian) 雪山劍法 (xueshan-jian) 踏雪無痕 (taxue-wuhen) 金烏刀法 (jinwu-blade) 飄絮掌法 (piaoxu-zhang) 凌霄拳法 (lingxiao-quan)
+  - 玄天無極功 (xuantian-wuji) , 迅雷劍法 (xunlei-jian)昆侖派技能, 要開 dummy 拜入昆侖門下找何太沖詢問拿書讀
+  - 唐詩劍法 (tangshi-jian)參考 wenxuan 2010 4
+  - 華山劍法 (huashan-sword)在華山書房 zhengli 隨機得到劍譜
+  - 嵩山劍法 (songshan-sword)在嵩山書齋 qu 隨機得到劍譜 (每次只有兩本, 都唔係劍譜要等房間 reload)
+  - 玄鐵劍法 (xuantie-jian)華山蓮花峰 jump jianzhong, move big stone, pick sec sword 可得玄鐵重劍(拿劍需先天臂力 34 以上), study jian 可學至 30 級 (性格不可昰陰險奸詐或心狠手辣, 先天臂力 26 以上)
+  - 聖火令法 (shenghuo-ling)可讀(yanjiu)聖火令 (在流雲使手上) 至 50 級, 沒有明教內功的話不能練習, 其實無咩用, haha
+  - 金 雁 功 (jinyan-gong)在終南山太乙池 jump chi, swim
+  - 狂風刀法 (kuangfeng-blade)【江湖】xx:xx 有人發現「萬里獨行」田伯光(tian boguang)出現在華山腳下(華山一帶)一帶活動。, rideto huashan, nw, kill tian 隨機 drop book, 學至一定等級自動習得 perform
+  - 昊 天 掌 (haotian-zhang)全真派技能, 要開 dummy 拜入全真找孫不二詢問拿書讀
+  - 玄天無情指 (xuantian-zhi)梅莊(無開放)黑白子技能, rideto meizhuan, n, w, push eye, jump shu jia, get chou, tear hong chou 得血棋衣 (或者開迷宮寶箱), 可讀至 100 級
+  - 千蛛萬毒手 (qianzhu-wandushou) (光明磊落 和 狡黠多變 不能學)去五毒黑森林入面虎穴深處(rideto wudu,w,w,wd,wd,w,nw,nw,n,n,cross,w,ne,s,s,enter,s), sousuo bone 找到銅牌 (如果有其他人攞咗要等現實時間一日先會再有)之後買火折火把, 去密室 (rideto wudu, w, w, wd, wd, su, s, kill he,s,s,climb wall) dian huo ba, insert tong pai, think wall 可學 (留意每升一級有機會減一點容貌, 最後會淨返 5 點)那裡 open xia 可拿到秘笈學(yaujiu) perform
+  - 紫金錘法 (zijin-chuifa)去日月神教找童百熊 (rideto beijing,w,w,n,n,w,w,w,w,w,w,w,sw,w,n,su,s,s,s) 詢問紫金錘之後再問紫金錘法, 此處有 bug, 會話送本紫金錘法畀你但又自己 keep 住, 要自己搶過嚟
+  - 太祖長拳 (changquan) 飛檐走壁 (feiyan-zoubi) 郭氏心法 (guoshi-xinfa)襄陽郭靖傳授, 要學都幾麻煩, 以下係code// 隐藏情节：郭靖教授三门特殊武功if( query("mark/guofu_ok", ob)//①确认被收容于郭府&& query("mark/guofu_job", ob)>200//②郭府工作总量大于两百&& query("combat_exp", ob)>10000//③确认经验值在一万和两万之间&& query("combat_exp", ob)<20000&& !query_temp("job_name", ob)//④此时没有领取工作&& !query("family/family_name", ob)//⑤没有拜师&& !query("can_learn/3skills/guojing", ob)//⑤保证以前未触发此情节
+&& ! stringp(ob->query_skill_mapped("force"))) //⑥ 没有激发特殊内功先要 5k exp 以下在武敦儒那裡 join guofu, 10k exp 以下去耶律齊那裡接工作 (有幾樣工作, 相關 cmd 為 jiao shui, chu cao, sao mafang, pi chai, ju mutou), reward 好少, 200 次之後做一下其他 job 之後 abandon exp to 10k - 20k. 滿足所有條件之後去郭靖那裡就可以學三個技能.
+  - 岳家散手 (sanshou) 太祖長拳 (changquan)3.5k exp 以下去泉州武館林少寧給五兩銀學習
+  - 黯然銷魂掌 (sad-strike) 男角色結婚後, 妻子被其他玩家殺三次後可問楊過習得.
+  - 幻魔身法 (huanmo-shenfa) 找 拿錢買命 學習.
+  - 狩獵技巧 (hunting) 找衡山獵人 詢問.
+  - 迷蹤猴拳 (mizong-houquan) 找到峨嵋山上的猴王打, 在打死猴王前被打中三十次以上有機會習得.
+  - 基本箭法 (arrow) 詳見[[常見問題#10. 有關 基本箭法|這裡]]
+  - 連珠箭法 (lianzhu-arrow) 消耗軍功向郭靖請教 (qingjiao lianzhu-arrow)
+
+
+
+

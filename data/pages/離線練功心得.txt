@@ -1,0 +1,332 @@
+====== 離線練功心得 ======
+
+本mud提供兩個超級有用的離線練功指令，分別是scheme和trigger。
+
+trigger和zmud/mushclient裡面的trigger非常近似，即是接收到某條pattern後就發出某一堆指令；而scheme更類似於timer，利用REPEAT/LOOP去重覆執行某一堆指令。scheme比timer更加強大，因為除了不斷重覆動作，它還可以判斷剛剛執行的指令是否成功來選擇執行排程以外的其他指令（下面詳解）。
+
+=== 離線練功有什麼好？ ===
+
+  * 不怕lag，不怕斷線，有覺好瞓。
+  * 設好就可以關機，慳電，不用成晚開機被老婆鬧。
+  * 以前在家開機練功後在公司／學校login怕takeover後斷trigger，離線練功就完全沒有這個問題。得閒login吹下水，吹完斷線，完全不打擾練功。
+
+=== 怎樣使用？ ===
+
+設定好之後用scheme start或trigger start開始執行，後後就可以斷線了；需要停的時候就scheme stop或trigger stop停止。至於怎樣設定？scheme和trigger各有不同，看下面。
+
+注意：scheme和trigger只可以執行其中一種，不可以兩種同時執行。
+
+==== scheme入門 ====
+手把手教你set scheme～
+
+=== 首先…… ===
+熟習do和alias指令是基本要求。不懂？先去看一下help。然後看一下help schedule，get個大概的意思就可以了。
+
+=== 起點 ===
+scheme一定要在睡房開始，所以選一個接近你練功點的睡房，譬如你在自家盤龍居研究的話就可以以臥室／左廂房／右廂房作起點，如果做guo job的話可以去guo n n w，要向朱熹學讀書寫家就去揚州客店二樓吧。
+
+=== 開始之前 ===
+scheme會消耗食物，如果你沒有辟谷符話，要不用乾糧和水袋填飽自己，要不帶多點錢在身讓系統幫你購買食物，否則太餓的話是無法開始scheme的。
+
+=== 如何設定scheme ===
+首先輸入「scheme edit」然後輸入你的schedule，入好了再輸入「.」去儲存（如果退出的話就輸入「~q」），這樣就完成啦！
+
+例子（用scheme來「research」一下）：
+<code>
+scheme edit
+請輸入你將要執行的計劃：
+結束離開用 '.'，取消輸入用 '~q'，使用內建列編輯器用 '~e'。
+─────────────────────────────
+research force 2000
+.
+你設置了一份新的計劃。
+</code>
+
+設置好的計劃會儲存在伺服器，輸入「scheme」就可以看到你設定好的內容：
+<code>
+scheme
+你目前制訂的計劃如下：
+research force 2000
+</code>
+
+輸入「scheme start」就可以開始執行：
+<code>
+scheme start
+你開始執行計劃。
+research force 2000
+你開始研究二千次有關「基本內功」的奧秘。
+你研究了一會，似乎對「基本內功」有些新的領悟。
+計劃執行完畢。
+</code>
+
+看到「計劃執行完畢。」即是代表計劃已經全部執行完畢，自動停止了。
+
+如果要再次執行同一個scheme，不用再「sceheme edit」，只要「scheme start」就可以了。
+
+=== scheme內移動 ===
+
+細心的你可能留意到上面例子一個奇怪的地方：為什麼在睡房可以研究呢？沒錯，用scheme的話可以在睡房做一般不能做的動作，如打坐／研究／練習，完全沒問題！但更多時候我們想在別的地方練功，那怎麼辦呢？
+
+答案是：在scheme內是可以行走的！但可惜騎馬就不行了，要不考慮去馬廄坐馬車？
+
+去聽濤閣research的例子：
+<code>
+do w,w,n,n,e,e
+research force 2000
+</code>
+
+在左廂房執行「scheme start」：
+<code>
+左廂房
+scheme start
+你開始執行計劃。
+中庭
+    這裡明顯的出口是 south、north 和 east。
+後院
+    這裡明顯的出口是 north、south、east 和 west。
+後花園
+    這裡明顯的出口是 south 和 east。
+竹林
+    這裡明顯的出口是 east 和 west。
+聽濤閣
+    這裡唯一的出口是 west。
+
+research force 2000
+你開始研究二千次有關「基本內功」的奧秘。
+你研究了一會，似乎對「基本內功」有些新的領悟。
+計劃執行完畢。
+</code>
+
+=== 重覆指令 ===
+
+當然，上面的計劃幾秒就跑完了，沒什麼用處。我們要的是可以run過夜，甚至過日過禮拜的scheme。這時候就必需要用到REPEAT/LOOP的指令。
+
+怎樣用呢？非常簡單，將你要重覆執行的指令wrap在「REPEAT」和「LOOP」之間。
+
+注意：REPEAT和LOOP必須是大寫。
+
+例子：
+<code>
+do w,w,n,n,e,e
+REPEAT
+research force 2000
+sleep
+LOOP
+</code>
+
+執行時就會是這樣：
+<code>
+左廂房
+scheme start
+你開始執行計劃。
+中庭
+    這裡明顯的出口是 south、north 和 east。
+後院
+    這裡明顯的出口是 north、south、east 和 west。
+後花園
+    這裡明顯的出口是 south 和 east。
+竹林
+    這裡明顯的出口是 east 和 west。
+聽濤閣
+    這裡唯一的出口是 west。
+
+research force 2000
+你開始研究二千次有關「基本內功」的奧秘。
+你研究了一會，似乎對「基本內功」有些新的領悟。
+sleep
+你往床上一躺，開始睡覺。
+不一會兒，你就進入了夢鄉。
+research force 2000
+你開始研究二千次有關「基本內功」的奧秘。
+你研究了一會，似乎對「基本內功」有些新的領悟。
+sleep
+你往床上一躺，開始睡覺。
+不一會兒，你就進入了夢鄉。
+……
+</code>
+這樣就可以一直跑下去不會完結。
+
+REPEAT/LOOP裡面可以再放REPEAT/LOOP，最多可以放十二層。
+
+如果你想research多幾次才睡，可以改這樣：
+<code>
+do w,w,n,n,e,e
+REPEAT
+research force 2000
+research force 2000
+research force 2000
+research force 2000
+sleep
+LOOP
+</code>
+
+記緊「research force 2000」要一行一個，不可以寫成「do research force 2000,research force 2000,research force 2000,research force 2000」。為什麼呢？因為scheme裡面的command是一tick跑一行的，你把幾個research force放一行，那就是一tick跑幾個，因為research有cooldown的關係，只有第一個會執行成功。反之，改成「do research force 2000,practice sword 500,learn zhu literate 2000」這樣就可以更加善用時間啦。
+
+==== scheme進階 ====
+
+=== 善用alias ===
+隨著你的scheme要做的事情越來越來，你很快就會發現一個問題，就是當你儲存的時候出現這個錯誤：
+<code>你這份計劃太長了，請重新設置一個短一些的。</code>
+因為scheme的schedule最多只能存400個characters！
+
+這時候怎麼辦呢？很簡單，把你的指令改成alias。
+<code>alias a1 do research force 2000,practice sword 500,learn zhu literate 2000</code>
+scheme:
+<code>
+do w,w,n,n,e,e
+REPEAT
+a1
+a1
+a1
+a1
+sleep
+LOOP
+</code>
+這樣就可以節省很多位置了。
+
+令外用alias有什麼好處呢？就是可以不用進「scheme edit」就可以更改schedule內容。譬如說，scheme在跑著，然後你發現你的基本內功已經研究到limit啦，怎麼辦？這時你就可以馬上輸入：
+<code>alias a1 do research dodge 2000,practice sword 500,learn zhu literate 2000</code>
+把research的技能改成別的，完全不用「scheme stop」和「scheme edit」來改，很方便。
+
+=== 冒號指令 ===
+這裡介紹一下在help schedule裡提到的冒號指令。
+
+平常指令是這樣的：
+<code>
+cmd1
+cmd2
+</code>
+無論cmd1成功與否，scheme跑完cmd1就會跑cmd2，
+
+如果你寫成：
+<code>
+cmd1:cmd1b
+cmd2
+</code>
+那scheme跑完cmd1後會判斷cmd1是否成功，成功的話會跑cmd2，失敗的話會先跑cmd1b再跑cmd2。
+
+看以下例子：
+<code>
+alias doresearch research force 2000
+alias researchsword alias doresearch research sword 2000
+</code>
+scheme:
+<code>
+doresearch:researchsword
+doresearch
+doresearch
+doresearch
+</code>
+首先「doresearch」很簡單就不解釋了。
+第二條alias「researchsword」的作用就是將「doresearch」改成「research sword 2000」。
+
+再下來是scheme。
+先doresearch一次，如果失敗的話就跑researchsword（將「doresearch」改成「research sword 2000」），接下來跑三次doresearch。
+
+doresearch失敗的原因可以有很多，例如潛能或精氣用盡了，或是skill已經limit了，系統不會告訴你是哪一個，只告訴你它失敗了。我們這裡希望catch的case就是force達到limit以致失敗，所以改成research sword可以讓scheme繼續跑。為免誤中副車，一定要小心考慮各種fail case確保它們不會發生才使用會比較好，譬如開scheme前確認有足夠的潛能，以及set好auto_regenerate等。
+
+<html><span style="color:red;font-weight:bold;">[頭盔]嚴重注意：經過測試冒號現時有bug，cmd1成功執行時有時會錯判為失敗而執行cmd1b，在vbman fix好之前請小心事用！一切冬瓜豆腐衫長褲短，本人恕不負責！[/頭盔]</span></html>
+
+另外：
+  * cmd1失敗時會always正確地判為失敗，只有成功時才間中出現誤判。
+  * do指令好像永遠被判為失敗，有指令要判斷的話最好把它獨立放一行，不要放在do裡。
+
+=== 特別的冒號指令 ===
+
+冒號後面除了寫自己的指令以外還可以用以下幾個特別的冒號指令：
+  * IGNORE, eg. cmd:IGNORE
+  * RETRY, eg. cmd:RETRY
+  * BREAK, eg. cmd:BREAK
+  * CONTINUE, eg. cmd:CONTINUE
+
+IGNORE可以不用理會。cmd後不寫冒號的時候就是IGNORE，代表不理會結果直接跑一下個cmd，所以說這個寫來幹嘛呢，還佔位……
+
+RETRY就是如果cmd失敗的話就一直重試到成功。
+scheme:
+<code>
+do e,s,s,s,s,s,s
+l walker:RETRY
+hit walker
+</code>
+執行：
+<code>
+scheme start
+你開始執行計劃。
+郭府花園
+    這裡明顯的出口是 north、south、east 和 west。
+  東海桃花島主之女「丐幫前任幫主」黃蓉(huang rong)
+長廊
+    這裡明顯的出口是 north 和 south。
+  丫環(ya huan)
+郭府大廳
+    這裡明顯的出口是 north、south、east 和 west。
+  襄陽城大將「北俠」郭靖(guo jing)
+郭府大院
+    這裡明顯的出口是 north 和 south。
+  全真教第二代弟子「丐幫幫主」耶律齊(yelv qi)
+郭府大院
+    這裡明顯的出口是 north、south、east 和 west。
+郭府大門
+    這裡明顯的出口是 north 和 south。
+  郭靖大弟子 武敦儒(wu dunru)
+  家丁(jia ding)
+武敦儒(wu dunru)說道：現襄陽正值動亂時期，不及招呼，還請恕罪。
+西大街
+    這裡明顯的出口是 north、south、east 和 west。
+  明教高手 南宮此(nangong ci)
+  歐陽世家高手 程濘(cheng ning)
+  歐陽世家高手 東門匡(dongmen kuang)
+  全真教高手 郭嵩(guo song)
+  武當派高手 毛諒乎(mao lianghu)
+
+look walker
+你要看什麼？
+RETRY
+
+look walker
+你要看什麼？
+RETRY
+
+拾荒者身著布衣走了過來。
+
+look walker
+這是一個拾荒者，看上去老實巴交的。不過聽
+說他和官府有交情，最好別去招惹。
+他是一位一級的男性人士。
+他看起來有六十多歲。
+他的武功看來不堪一擊，出手似乎極輕。
+他看來身上並無絲毫傷痕。
+他裝備著：
+  □布衣(bu yi)
+
+hit walker
+
+你對著拾荒者大喝一聲：看招！
+
+拾荒者(walker)說道：這位小兄弟，且慢！
+</code>
+
+BREAK和CONTINUE必須在REPEAT/LOOP裡使用。
+
+BREAK就是在cmd失敗時直接跑出LOOP，例如：
+<code>
+REPEAT
+cmd1
+cmd2:BREAK
+cmd3
+LOOP
+cmd4
+</code>
+如果cmd2失敗的話直接跑到LOOP以後跑cmd4，cmd3就不跑跳過了。
+
+CONTINUE就是在cmd失敗時跳回REPEAT，例如：
+<code>
+REPEAT
+cmd1
+cmd2:CONTINUE
+cmd3
+LOOP
+</code>
+如果cmd2失敗的話直接跳回REPEAT跑cmd1、cmd2……這樣。
+
+（待續……）

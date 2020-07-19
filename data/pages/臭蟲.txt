@@ -1,0 +1,49 @@
+====== 報錯 ======
+
+這頁面列出待修正的bugs:
+  - 14/06/2018   qianming xsword 問題 \\ 1.簫 變成 就咁一把劍, 是否不能用簫簽名? \\ 2. 開光前都可以 hide, 但之後就會永遠消失? \\  \\ 物品類型 : 兵器(簫)  \\ 重    量 : 5000 \\ 傷 害 力 : 700 \\ 鑲嵌凹槽 : 1 \\ 下線丟失 : 否 \\ 裝備類型 : 武器 - 劍 \\ 裝備品級 : 劣質的 \\ 綁定類型 : 無綁定類型（無綁定） \\ 裝備要求 : 等級 Lv.20 \\ 裝備要求 : 根骨 59 \\ 耐 久 值 : 75/100 \\ 鑲嵌寶石 : 1/1;⊙玄石(magic stone)身法 +2,讀書效果 +2% \\ 裝備效果 : 兵器傷害力 +700 \\ 裝備效果 : 身法 +2 \\ 裝備效果 : 讀書效果 +2% \\ qianming 後 效果都無左武器本身攻擊力 \\ hide bdx 你輕輕一旋北鬥蕭，已然了無蹤跡。 \\ summon bdx 你不知道如何召喚這個物品。 \\    <- 請先搵張天師開光再hide <- 當然應該要先開光才 hide, 但未開光是否應該好像其他普通物品一樣 hide 指令無效才對 ? 
+  - 13/06/2018   二只野兔(ye tu)  come tu \\ 野兔是只無主野獸，你得先馴服(train)它啊！ train tu \\ 只見你沖著野兔手腳亂擺，口中似對它輕輕細語。 頓時野兔沖著你搖了搖尾巴，很溫馴的樣子。 come tu  \\ 野兔早被人家馴服了，你不是找死啊！ \\  train success, but dun recognize me as owner ?
+  - 13/06/2018 二百七十八包玉真散(Yuzhen san) 你張開嘴，猛地吞下了玉真散，輕輕的哼了一聲。 吃了一次後27X包全部不見了。
+  - 10/06/2018 同時間Task有多個NPC要求交換物品的話，給了第1個後其他無法再交換。
+  - 09/06/2018 幻魔身法(huanmo-shenfa)無法激發為身法。
+  - 09/06/2018 逍遙遊拳法(xiaoyaoyou)照理應該為拳法。
+  - 06/06/2018 enable leg chuanyun-leg 沒有這個技能種類，用 enable ? 可以查看有哪些種類。\\ leg, arrow, array, axe 同 spear  skill1 都唔當係 bs skill 顥示 (雖然好似無 sp spear, *laugh), 另外 enable ? 唔知點解有 taoism 
+  - 05/06/2018日月神教風雷堂長老 童百熊(tongbai xiong)  你向童百熊打聽有關『紫金錘』的消息。你向童百熊打聽有關『紫金錘法』的消息。童百熊對你說道：這位道兄，你我一見如故，這本書我就送你吧，希望你能領悟其中精要。  本 zijin_book 消失咗
+  - 05/06/2018 錢得發對你說道：在下這黃馬甲只換不賣，要換得話，拿來。
+  - 26/05/2018 task死點：
+    - chengdu 北大街 去不了 south，會 show 你一抬足，發現地上有毒，忙抽腿退回。
+    - xiangyang 青龍內門 去不了 up，會 show 守城士兵一把攔住你道：你沒有得到郭大人的許可，不能上去！
+    - xiangyang 青龍外門 去不了 east，會 show 軍營重地，閑雜人等，不得入內！
+    - yangzhou 打鐵舖 去不了 south，會 show 不要在別人家裡亂躥！
+  - 26/05/2018 加int個桃花陣某啲char行晒64格都冇暈點，再繼續行多幾格就會random暈，再入返去再行多>64格又會喺唔同地方暈。
+  - 26/5/2018 - 蛇島奇功 perform chang1, chang2 & chang3 無法直接使用也無法向師父學習。
+  - 26/5/2018 - 莊子舞 perform hua & 四象步法 perform fei 使用後未有提升身法。
+  - 峨嵋 exert tiandi 增加精氣中死亡不會取消tiandi效果; 重生後, tiandi完結後最大精氣比原來(即未tiandi前)減少。
+  - 長篇的help file如果想中途quit, 輸入"q" 不能離開閱讀文件，只有被迫看完全篇內容。
+  - 祝福套裝set bonus not working.
+  - 運鏢在help work/help job中沒有介紹; 鏢車不能移動 (drive cart [dir]: 不是可以移動的車?!?!?!) - 原來gan che to xxx得
+  - rideto xuanming 你無法騎馬達到這個地方。
+  - 你向張三豐打聽有關『太極劍意』的消息。: 無野出
+  - help wudang話taiji-quan有亂環訣, but skill taiji-quan no such pfm, 但有perform lian, 唔知咩來?!!?!?
+  - 當舖用唔到pawn and redeem <- 去錢莊開保險箱啦 by config
+  - lured (hunting cmd) 應該喺 can_hunting 既地方先用得, 但其他地方都用到落完餌變成永遠唔會完.
+
+
+====== 已修正 ======
+
+  - 15/06/2018 special ironskin > 你的體力不支，無法迅猛提升自己的防御力。(full jing qi 都唔得)
+  - 28/05/2018 - 除forest以外的fuben寶箱打開後都是空的。
+  - 26/05/2018 task死點（如下述任何一個是quest place請無視之……）：
+    - beijing se 48
+    - chengdu ne 48
+    - dali sw 48
+    - hangzhou ne 48
+    - jingzhou ne 48 低處
+    - jingzhou ne 48 高處
+    - jingzhou ne 48
+    - luoyang se 48
+    - xiangyang ne 48
+    - zhongzhou ne 48
+  - 08/05/2018 - 指令time會出現亂碼 "珋婓腔 控儔 奀潔 媼錨坋匐爛拻堎匐坋侐奀坋珨煦媼坋鏃ㄛ陎媼 弊暱綻坋趼"
+  - 你開始向拿錢買命請教一句有關「huanmo-shenfa」的疑問。你的「huanmo-shenfa」進步了！
+  - animaout 你還沒有轉世過，如何能領悟出修煉元嬰出世？?????????????

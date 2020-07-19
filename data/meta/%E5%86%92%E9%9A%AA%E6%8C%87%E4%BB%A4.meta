@@ -1,0 +1,27 @@
+a:2:{s:7:"current";a:8:{s:4:"date";a:2:{s:7:"created";i:1523210910;s:8:"modified";i:1523210910;}s:7:"creator";s:19:"總舵舵主(Vbman)";s:4:"user";s:5:"vbman";s:11:"last_change";a:8:{s:4:"date";i:1523210910;s:2:"ip";s:13:"203.218.22.46";s:4:"type";s:1:"C";s:2:"id";s:12:"冒險指令";s:4:"user";s:5:"vbman";s:3:"sum";s:6:"建立";s:5:"extra";s:0:"";s:10:"sizechange";i:12735;}s:5:"title";s:12:"冒險指令";s:8:"internal";a:2:{s:5:"cache";b:1;s:3:"toc";b:1;}s:11:"description";a:1:{s:8:"abstract";s:1053:"冒險指令
+
+泥潭常用指令詳細解說如下：
+
+
+    本遊戲的玩家可以使用五大類指令：系統指令、聊天指令、
+冒險指令、武功指令以及特殊指令。基本指令是ＭＵＤ一般都有
+的指令，故用英文表示。括號內表示可用的命令縮寫。
+
+
+$HIY$【冒險指令】$NOR$
+
+    $HIC$go（e、w、s、n、ne、nw、se、sw、u、d、nu、nd、su、sd、
+wu、wd、eu、ed、enter、out等等)$NOR$
+    指令格式：go <方向>。
+    這個指令讓你往指定的方向移動。可以直接鍵入方向，有東：
+east(e)、西：west(w)、南：south(s)、北：north(n)、進入：
+enter、出去：out等。用進入指令還可以鑽洞，鑽草堆等等。
+
+    $HIC$look(l)$NOR$
+    指令格式：look [<物品>|<生物>|<方向>]。
+    這個指令讓你查看你所在的環境、某件物品、生物、或是方向。
+可以看自己。(切記：look 的指令作用比一般人想象的要大得多，
+尤其是在迷宮中。)
+
+    $HIC$ask$NOR$
+    指令格式：ask <人名> …";}s:8:"relation";a:1:{s:10:"firstimage";s:0:"";}}s:10:"persistent";a:4:{s:4:"date";a:1:{s:7:"created";i:1523210910;}s:7:"creator";s:19:"總舵舵主(Vbman)";s:4:"user";s:5:"vbman";s:11:"last_change";a:8:{s:4:"date";i:1523210910;s:2:"ip";s:13:"203.218.22.46";s:4:"type";s:1:"C";s:2:"id";s:12:"冒險指令";s:4:"user";s:5:"vbman";s:3:"sum";s:6:"建立";s:5:"extra";s:0:"";s:10:"sizechange";i:12735;}}}

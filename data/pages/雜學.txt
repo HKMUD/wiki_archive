@@ -1,0 +1,195 @@
+以下分享全門派可學非武功技能
+
+┌──  三十項知識技能  ────────────────────┐\\
+│  陣法修養 (array-cognize)  \\
+│  叫化絕活 (begging)         \\
+│  禪宗心法 (buddhism) \\
+│  道聽途說 (checking)  \\
+│  川菜技藝 (chuancai-jiyi)  \\
+│  兵法修養 (craft-cognize)\\
+│  廣 陵 散 (guangling-san)   \\      
+│  還價技巧 (higgling)         \\    
+│  回生決 (huisheng-jue)         \\    
+│  發呆神功 (idle-force)         \\   
+│  經絡學 (jingluo-xue)            \\ 
+│  密宗心法 (lamaism)         \\    
+│  煉丹術 (liandan-shu)             \\
+│  讀書寫字 (literate)              \\
+│  大乘涅磐功 (mahayana)            \\
+│  算    術 (mathematics)          \\
+│  基本藥理 (medicine)            \\
+│  易容術 (pretending)             \\
+│  奇門五行 (qimen-wuxing)         \\
+│  清心普善咒 (qingxin-pushan)       \\  
+│  騎術 (riding)                    \\
+│  梵文 (sanscrit)                  \\
+│  妙手空空 (stealing)               \\
+│  道學心法 (taoism)                \\
+│  天魔決 (tianmo-jue)            \\
+│  馭獸術 (training)               \\
+│  笑傲江湖曲 (xiaoao-jianghu)      \\
+│  雲龍心法 (yunlong-xinfa)        \\
+│  正氣決 (zhengqi-jue) \\
+│  針灸術 (zhenjiu-shu)             \\
+└────────────────────────────────┘   \\        
+
+┌──  五項基本技能  ────────────────────┐\\            
+│  吹簫技法 (chuixiao-jifa)               \\
+│  基本廚藝 (cooking)              \\
+│  古箏技法 (guzheng-jifa)        \\
+│  基本醫術 (medical)             \\
+│  彈琴技法 (tanqin-jifa)         \\
+└────────────────────────────────┘ \\           
+
+<del>┌──  一項特殊技能  ────────────────────┐ \\
+│  狩獵技巧 (hunting)  \\
+└────────────────────────────────┘ \\  </del>       原來這是武學技能  
+
+┌──    九項其它技能    ────────────────────┐   \\         
+│  書法藝術 (calligraphy)          \\
+│  鑲嵌技藝 (certosina)             \\           
+│  弈棋之道 (chess)                 \\          
+│  繪畫技巧 (drawing)              \\          
+│  趕車技巧 (driving)             \\         
+│  附魔技藝 (enchanting)         \\         
+│  鍛造技藝 (forging)            \\          
+│  拾荒技能 (gleaning)            \\           
+│  冶煉技藝 (smelting)               \\           
+└────────────────────────────────┘            
+
+**打仗用**
+
+ 陣法修養 (array-cognize)  兵法修養 (craft-cognize)   \\
+讀武穆遺書(解倚天劍屠龍刀 quest 可得)
+
+**宗教/語言類**
+
+禪宗心法 (buddhism) 經絡學 (jingluo-xue) 梵文 (sanscrit)    \\
+禪宗心法防少林wuji走火及加一點先天悟性, 經絡學衝穴用, 梵文可讀九陰真經 \\
+可找一燈大師學習
+
+密宗心法 (lamaism)\\
+可讀雪山經書 或 找天龍寺高僧學
+
+大乘涅磐功 (mahayana) \\
+女角色可加一點先天身法 \\
+可讀峨嵋經書
+
+道學心法 (taoism) \\
+可讀道德經
+
+**音樂類**
+
+廣 陵 散 (guangling-san) \\
+特殊技能, 觸發後可以彈奏\\
+身處衡山的曲洋身上有曲譜
+
+清心普善咒 (qingxin-pushan)    笑傲江湖曲 (xiaoao-jianghu)  彈琴技法 (tanqin-jifa)\\    
+清心普善咒, 笑傲江湖曲為特殊技能, 觸發後可以彈奏\\
+可找令狐沖學習
+
+吹簫技法 (chuixiao-jifa)\\  
+可找黃藥師學習 (要解謎)
+
+古箏技法 (guzheng-jifa)\\
+可找歐陽鋒學習
+
+**廚藝類**
+
+基本廚藝 (cooking)  川菜技藝 (chuancai-jiyi) \\
+可以做菜(cook) (需在成都可買菜料)\\
+可找杭州或成都廚娘學習
+
+
+**醫學類**
+
+基本醫術 (medical)   針灸術 (zhenjiu-shu) \\
+針灸術可以針灸治病\\
+可找北京姚春學習
+
+煉丹術 (liandan-shu)  基本醫術 (medical) \\
+高等級煉丹術可在北京回春堂練出比較高級的丹藥, 找到武當藥理更可自己制藥(make)\\
+可找揚州平一指學習
+
+基本藥理 (medicine) \\
+與 基本醫術 (medical) 為兩套不同的制藥系統, 可在泉州買藥材制藥 \\
+可到高昌解謎學習, 可參看 wenxuan 2010 5 (注意實際過程與文選會有出入)
+
+
+**其他**
+
+還價技巧 (higgling) \\
+在npc店舖買東西有折扣\\
+可找揚州戚長發學習
+
+回生決 (huisheng-jue)   馭獸術 (training)\\
+回生決復活魔獸, 馭獸術部分野生動物不會autokill\\
+可找揚州狂風學習
+
+發呆神功 (idle-force) \\
+可開聊天室\\  
+可找揚州游迅學習後發呆至斷線
+
+讀書寫字 (literate) \\
+增加後天悟性\\
+可找揚州朱熹學習
+
+算    術 (mathematics) \\  
+可找黃藥師學習 (要解謎)
+
+易容術 (pretending) \\
+可變成其他人\\
+可讀百變神通(長安解謎可得)
+
+奇門五行 (qimen-wuxing)\\    
+可讀易經
+
+騎術 (riding)\\
+狂風處完成魔幻獸送一百級, 每次rideto會進步
+
+雲龍心法 (yunlong-xinfa)\\
+可加入天地會學習
+
+正氣決 (zhengqi-jue)\\
+加神用\\
+可讀華山正氣吟
+
+天魔決 (tianmo-jue)   \\
+減神用\\
+找揚州鬼三解謎可得 天魔訣(tianmo jue)一冊\\
+
+鑲嵌技藝 (certosina) 繪畫技巧 (drawing) \\
+鑲嵌技藝鑲嵌裝備, 繪畫技巧畫地圖/風景圖\\
+可找魯班學習
+
+書法藝術 (calligraphy)  \\
+可讀率意帖
+
+弈棋之道 (chess) \\
+可讀棋譜
+
+附魔技藝 (enchanting) 鍛造技藝 (forging) 冶煉技藝 (smelting)  \\
+造裝備用技能\\
+可找干將學習
+
+趕車技巧 (driving) \\
+減少趕車忙亂兩回會機會\\
+運鏢/礦車時學會
+
+拾荒技能 (gleaning) \\
+可找拾荒者學習
+
+狩獵技巧 (hunting)  \\
+可在指定地點狩獵\\
+可找衡山獵人解謎學習
+
+**丐幫專用** 
+
+叫化絕活 (begging)  道聽途說 (checking) \\
+學到用唔到\\
+可找俠客島石破天學習
+
+妙手空空 (stealing) \\
+不用說明吧?\\
+丐幫某些 NPC 才有的技能, 但普通人都可以 steal 的, 成功的話就學會了 
+

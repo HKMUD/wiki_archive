@@ -1,0 +1,197 @@
+本mud比舊hkmud更完善,練功速道亦更快.以下係舊MUD友上手速成大宗師
+<code>註:mud中部分help file並不準確, 本指南經人手確認可放心參閱</code>
+
+首先開個dummy入mud睇下想入咩party學咩public skill
+
+了解inborn同性格要求(本mud不用ro inborn)
+
+之後可以sf正式開始新char!
+
+
+==== 第1目標_村有一寶 ====
+
+開始新char後你會見到老村長, 最好同佢溝通下:) 
+離開新手村後選擇去武廟
+
+輸入mygift, 做mygift任務直至做到叫你去bai party, 之後你就可以用cmd ->rideto周圍去(e.g. rideto dl_shop)
+
+想了解更多路線, 可用help path
+
+===== 第1.1目標_火焰刀 =====
+
+加性別先天(男id)
+
+本mud可以solve quest加先天inborn (help add_gift), 亦可以隨時買丹重新分配
+
+男id一定要去雪山出家學火焰刀(鳩摩智), 出家學完200lv之會加一先天con,
+之後向鳩摩智打detach
+
+本mud脫離師門是有後果的 (help bai, help detach),
+還俗cmds 是huansu
+
+女id可以直接拜心儀門派
+
+不用bai emei, 可以等讀書寫字高lv一點才去emei拎shu讀
+
+
+===== 第2目標_拜師 =====
+
+
+拜師後(男id拜雪山加先天除外),應以學成門派所有技能為目標
+
+門派最終能拜的大掌門未必擁有門派所有技能, 本mud並不容許向下拜或拜同輩
+
+(例如:華山第十三代是不能拜寧中則學習玉女金針十三劍)
+
+所以請小心確認
+
+學pfm則不在此限
+
+(本mud pfm 多數須要學習才能使用, 達到使用pfm要求和擁有功績後, 向教授pfm 的npc, ask npc about <pfm 名稱>)
+
+門派大掌門的skill lv 為1000lv,
+但是你只能夠學習到200lv(知識技能不在此限)
+
+200lv之後主要是靠research來提升基本技能和內內功
+
+提升research速度是一門highhand學問(help research)
+
+其中一點是相關的技能越多越好, 所是學得到的全部都學就不會錯
+
+===== 第2.1目標_煉丹 =====
+
+你現在擁有的exp支援一百lv, pot亦十分足夠
+
+學一百lv dodge skill和一種attack skill就可以去北京回春堂藥店煉丹
+
+(rideto beijing, w,w,n,e,e,n, ask yao about liandan)
+
+煉丹對剛開始的新手可以說是最容易ro最穩定的job, 煉丹的過程亦可能煉出內力精力丹, 所以本人十分推薦
+
+liandan job的毒蛇和毒郎中可以不用殺直接無視
+
+除煉丹外, 同時亦應solve mygift直至叫你完成師門任務, 
+
+因為師門任務難度高,本階段不建議做
+
+(歷練<ask master about 歷練>)
+
+單靠煉丹去到breakup約需時一至兩日
+
+==== 第3目標_breakup ====
+
+打通任督二脈(breakup)(見help closed)
+
+完成之後加好多精氣, 加快練功速度
+
+有400lv effective force, 和一定pot(建議2~300k, 一日約用100k),
+可去任可一個室內睡房, 輸入cmds <breakup>
+
+輸入後除發呆和chat之外, 什麼也不能做(就象舊mud比人jail)
+
+breakup的時間由數小時到數日不等(通常大半日),
+期間可以quit, 人物會顯示為離線, 其人仍然可以見到你
+
+煉丹job沒有skill要求, 可以全力去升force同sp force
+
+完成breakup之後,
+可立即進行元嬰出世(animaout)
+
+過程同breakup一樣,
+完成之後加好多精,精力
+
+完成animaout之後,
+可再打通生死玄關(death), 過程同上
+
+但不一定要立即進行
+
+完成後在死亡後有一定幾率不丟失技能, 加不過有任可精氣加乘
+
+建議夠pot可順手做埋
+
+<code>重要提示:新手在十三歲十二個月之前可在武廟ask nan 狀態回復, 即時回復全部精氣fp</code>
+
+==== 第4目標_大jones ====
+
+成為大宗師, 就可以跟據性格向一位宗師學習一種終極skill(和一些基本技能)
+
+光明磊落 九陰神功 (jiuyin-shengong)
+
+狡黠多變 不敗神功 (never-defeated) 
+
+心狠手辣 南海玄功 (bluesea-force)
+
+陰險奸詐 葵花魔功 (kuihua-mogong)
+
+終極skill可以enable做內功輕功招架和不同bs skill, 但亦同時被多種bs skill 限制lv
+
+(如不敗神功可enable所有兵器類skill, 九陰神功可enable所有空手拳腳類skill)
+
+
+要成為大宗師要, 首先要搵四位npc宗師(rideto)
+
+每位宗師會測試你一種功夫
+
+分別為force, weapon, unarmed, dodge
+
+ask them about opinion, 佢地會叫你fight佢, 過左一招佢就會比評價(可用score查看)
+
+當全部5星, 你會成為大宗師!
+
+(5星要求為, 約500 effective skill lv)
+
+
+==== 第4.1目標_kingwar/task ====
+
+在完成breakup之後邁向宗師期間, 可以嘗試其他job
+
+現在先淺談兩種主流job
+
+(做job前可先abandon一些exp, 因為有些npc的實力是跟據你exp而定)
+
+**王朝戰爭 kingwar(help kingwar)**
+
+kingwar最長為30分鐘, 30分鐘一到就會判定為防守勝利
+
+如果在camp北方守城的hh不幸失手, npc殺入camp中, war會以失敗告終, 如果在camp北方守城的hh提早擊殺boss, war亦會早完
+
+新手首先打wartime, 睇下有冇人開緊war, 如有, rideto xiangyang 搵郭靖参軍(冇任何職務軍功限制)
+
+新手在kingwar能夠做的只有發呆或者運兵糧(camp以北是危險區域)
+
+運兵糧在camp 輸入lingming houqin-baozhang,
+之後向s s, 在不停向西行, 直至去到襄陽城青龍內門或汴樑城門(會穿越襄陽城)
+
+見到你將糧草載上馬車，又立刻開始了行軍的奔程....即可原路返回camp
+
+其間有江陽大盜 auto kill, 襄陽城至汴樑城一段更是exp related,skill lv同exp lv limit相差太遠請小心
+
+成功完war後將會有exp,pot,100 gold,體會,軍功
+
+(體會 用cmds <derive>可化做武學修養 (martial-cognize), 提升research速度)
+
+你軍中職位限制你能領取的max reward
+
+當總軍功去到一定數目, 可向郭靖要求策封, 高職位須到之後汴樑城問劉公公策封
+
+最高職位為 ☆ 兵馬大元帥 ☆ max reward可拎 2250軍功
+
+軍功可用於jgstore購物
+
+<code>fast track 提督:問人拎1000 gold, rideto xiangyang之後一路向西, 盡頭之後 5n 3e, ask zhao 功名, give zhao 1000gold</code>
+
+建議有三百lv skills 可嘗試ro, 穩定後可取代liandan job
+
+**task**
+
+請見help task
+
+本指指南不作多談, task 能獲取大量功績學pfm, 但因為task數目有限, 多人做搶, 新手不建議做
+
+
+__依此新手指南不出一星期即可成為大宗師之後努力robot!__
+
+
+----
+
+桃花島第二代弟子蛋榚風字

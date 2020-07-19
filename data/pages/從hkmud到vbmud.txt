@@ -1,0 +1,95 @@
+====== 從hkmud到vbmud…… ======
+
+本文假設你是hkmud的舊玩家，主要介紹新mud的新feature和一些小秘技，以及和舊mud的不同之處。
+
+出生
+  * 天賦點不用ro，出生時可直接指明。之後會有各種quest或丹藥增加inborn，詳情看help add_gift。
+  * 另外輸入special可看到角色的特技，這個喜歡的話可以刷，也可以直接從ntstore購買。
+  * cs n e買洗天賦丹可洗天賦。
+  * 性格和性別要小心選擇，會影響你以後能學習的技能。性格在拜師以前可以在北京文廟修改（chouqian），轉世後變成「國士無雙」；而性別連轉世世也無法改變，切記慎重選擇。
+
+交通篇
+  * 做mygift買隻神獸就可以rideto各地，打rideto可以看到目的地列表。
+  * ride rec xxx可將現處地記錄為rideto點，刪除時用ride unrec xxx。騎馬記錄點冊馬石來贈加，其中一個從mygift可得，之後可從ntstore購買(128) 冊馬石。
+  * 在馬廄用goto可以坐馬車去各地，look paizi可以看到目的地列表及價格。
+
+角色狀態篇
+  * hp相關指令：hp, hp -g, hp -m, hp2 -g
+  * skills相關指令：skills, skill <skill id>, checkskill <skill id>, cha <basic skill id>, combat, combat <basic skill id/party id>
+  * 其他：score, istat，ability
+  * 有些job的獎勵不受hp -m內的最大潛能／最大體會限制，如煉丹，kingwar等，自己觀察。
+  * 除了skill lv limit，還有一個角色等級是隨exp上升的（hp -m可查）
+    * lv = root3( exp / 10000 )
+    * skill lv limit = root3( exp * 10 ) = lv * root3(100000)
+  * 升內力和精力不用靠打坐，可以儲門派功績從fmstore買丹啪。
+  * 用abandon exp to <amount>或abandon <skill id> to <level>減低exp或skill level。
+  * set share_exp <n>可把你獲得的經驗的n%分給神獸，神獸能力會隨經驗升級（輸入shape可查）。
+
+設定篇
+  * 如果看不到打架招式，輸入set查看settings "brief"和"combatd"是否unset或設定為0和null。
+  * set combat_brief 1不觀看第三方戰鬥訊息。
+  * set keep_idle 1避免發呆太久退出遊戲，離線連功有用。
+  * set auto_war 1自動打kingwar。
+
+技能篇
+  * 技能有分知識技能，基本技能，特殊技能及其他技能。
+  * 學超過30 skills並不會減慢學習。
+  * 技能來源：師父，solve quest，中故事。夫妻之間好像不能互相學習（？）
+  * 基本技能和特殊內功lv 180過後可以研究(research/yanjiu)，消耗潛能。每回可以研究多次，輸入research force 10000000可看到上限。每回研究後有cooldown。
+  * 其他特殊技能也可以研究，但和舊mud一樣，一般會用練習(practice/lian)。
+  * 武術修養只能靠汲取(derive/jiqu)提升，消耗體會。拿劍在手再derive sword-cognize就可以提升劍術修養，如此類推。
+  * 一些門派技能（例如桃花島的陰陽八卦）只能從師父處學，消耗門派功績。
+  * 有些perform由技能升級獲得，有一些要問師父教，有一些要solve quest，有一些checkskill說有的根本學不到，呵呵。
+
+師門篇
+  * 殺害同門弟子是會受到處分的。
+  * 不論任何經驗值，由一派（除了新手村武伯）轉到另一派時，你可以選擇叛師，即直接拜第二派，或是先從舊派脫離(tuoli)再拜第二派。叛師有很多後果，例如有些門派不收，有些武功不能學；脫離則無此限，但會剝奪所學過的特殊技能，以及基本技能降到100級。
+  * 輸入quest <master id>接師門任務，師父要你歷練的話就向他打聽「歷練」。
+
+商店篇
+  * fmstore - 用門派功績購買（做task或quest可得）。
+  * jgstore - 用軍功購買（做guo job或kingwar可得）。
+  * ntstore - 用NT$購買（每日去武廟簽到可得）。
+  * 各城馬廄上面的player store，例如rideto cd_shop。
+
+安居樂業篇
+  * 建屋先去魯班處問他拿張紙，到你想建屋的地方把地點畫下來，交還紙張後付五兩黃金訂金，再去銀號提金票（withdraw n thousand-gold)付餘額給魯班。
+  * 讓別人進入你家，可選以下其中一項：
+    * 向屋內各處npc輸入vip <player id>，那個player就可以任意通過該npc。
+    * 到書房簽一份手諭讓player帶在身。
+
+闖蕩江湖篇
+  * ask <npc id> about all，他會告訴你有什麼可以問。
+  * summon <id>或hide <id>召喚或隱藏屬於你的物件。
+  * 武廟南賢會幫新手免費「恢復狀態」。
+  * 身上帶個雄黃蛇就不會咬你，cs e e n可買。
+  * 身上帶個睡袋可以周圍睡，cs e s可買。
+  * 可向揚州客店游訊打聽某人或npc的所在地，或是給錢打聽謠言頻道造謠者。
+  * 如已進入kill的狀態，halt;quit或halt;逃走是不可行的。
+  * 攻擊門派擋路npc會引來同門及掌門人圍剿，這時神獸可以幫忙。用attack <id>可以讓神獸攻擊某人，stop <warcraft id>停止。
+  * exert inspire療精，exert dispel解毒，看help force。
+  * 以前的party這裡叫family，以前的guild這裡叫bunch，不過兩個channel仍然用party和guild，看help family及help bunch.2。
+  * 這裡的bunch有分player bunch和npc bunch，player可join任何一個，看help bunch.2。
+  * 拿到無名大小銅人後rideto tianshi，give zhang 5 gold，show tongren，他就會幫銅人開光，開光後會顯示這個銅人能打通的經脈。輸入chongxue tongren打通穴位。打通不同經脈有不同bonus，輸入jingmai可查看細節，看help zhoutian。
+  * 有一定等級後找四位宗師評價，通過成為大宗師後就可以各種breakup,animaout,death,closed了，詳情看各help file。
+  * 一次輸入太多指令不會flood faint，只會freeze 10秒。
+  * 大部份quest在各help file或wenxuan都列明了，自己看。
+
+會員篇
+  * 每日到武廟ask qiandao npc about 簽到，可領取NT（NT多寡視乎你的等級），NT可用在ntstore購物。
+  * 輸入member可看到會員相關指令。40級以後可用member zhuan <nt> to <id>可將NT轉賬給他人。
+  * 定時到武廟ask nan xian about 鑒定會員，根據你的nt花費南賢會給你升級會員籍
+    * 2000NT = 白金會員，購物8折
+    * 1000NT = 黃金會員，購物8.8折
+    * 500NT = 黃銀會員，購物9.5折
+  * 此外如購買會員籍（ntstore show card），期間每日可問南醫領取：
+    * 「雙倍經驗」時間，每次兩小時，總共可以問三次。如果一口氣問三次即是領六小時。
+    * 「高效練功」時間，每次兩小時，只可以問一次。
+    * 如果要更長的時間可考慮買一週（ntstore show srv）。
+
+其他
+  * 各大feature：help feature
+  * 離線練功：help closed, help schedule, help trigger
+  * 武器：help equip
+  * 副本：help fuben
+  * 轉世重生：help reborn

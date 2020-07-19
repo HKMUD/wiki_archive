@@ -1,0 +1,44 @@
+====== 心得 ======
+
+^ 文章標題                        ^ 原作者             ^
+| [[桃花迷陣解法]]                  |                 |
+| [[逍遙派心得]]                   | 卡卡(kaka)        |
+| [[計劃練功簡易說明]]                |                 |
+| [[蛋糕風之新手指南上冊]] ([[cake1]])  | 蛋糕風(cake)       |
+| [[蛋糕風之新手指南中冊]] ([[cake2]])  | 蛋糕風(cake)       |
+| [[蛋糕風之新手指南下冊]] ([[cake3]])  | 蛋糕風(cake)       |
+| [[蛋糕風之轉世心得]]                | 蛋糕風(cake)       |
+| [[蛋糕風之個人裝備]]                | 蛋糕風(cake)       |
+| [[無形vs人道佛]]                 | 無形(invisible)   |
+| [[寰宇天晶  合成方法]]              | 劍心(swordsoul)   |
+| [[從hkmud到vbmud]]            | 萊茵哈特(reinhard)  |
+| [[離線練功心得]]                  | 萊茵哈特(reinhard)  |
+| [[淺談以轉世為目標的升級及練功心得]]        | 萊茵哈特(reinhard)  |
+| [[技能]]                      | 玉衡風(ctfa)       |
+| [[製藥]]                      | 玉衡風(ctfa)       |
+| [[裝備]]                      | 玉衡風(ctfa)       |
+| [[運石基本 inmud trigger]]      | 玉衡風(ctfa)       |
+| [[zmud 運鏢 trigger alias]]   | 玉衡風(ctfa)       |
+| [[常見問題]]                    | 玉衡風(ctfa)       |
+| [[比悟迪轉世紀錄]]                 | 比悟迪(szesze)     |
+| [[丐幫心得]]                    | 邪王(darkzu)      |
+| [[mudlet設定]]                | J.              |
+
+=== Emoon ===
+資料未算多，先分享心得
+~每天簽到領潛能基本功直接跟師傅學;
+~盡快完成 myfigt 有自己座騎便可不用理 path 直接 rideto 所需地方; thd 唔駛理破陣搵師父;  
+~多留意 npc 穿著拿什麼物品， 慢慢做 job 更暢順;   
+~thd tz 要求先天 int 28
+
+=== Config ===
+快速練內力
+最快就係去XX suck,新人可以先去XX學200級huagong吸飽吸滿再脫離, 注意有天賦/性格要求.
+其次係schedule, 個人設定係 scheme edit;REPEAT;#64 schemecommand;LOOP;. <- 照抄, 然後alias schemecommand do exert recover,dazuo n. n係effect force乘2
+
+=== Swordsoul ===
+[[【北京煉丹 丹藥功效】]]
+最有用是 軒轅補心丹, 回陽無極丹, 修羅無常丹, 羅剎無常丹(但記住有Cooldown的)。
+
+=== 總舵舵主(vbman) ===
+[[https://docs.google.com/spreadsheets/d/14dWEEze_lsL1Y2wp30a9z0wh-agclj_uUXrv6f-G-mM/edit#gid=1977982841|封印經驗 vs 人物等級]]
