@@ -1,0 +1,13 @@
+a:2:{s:7:"current";a:8:{s:4:"date";a:2:{s:7:"created";i:1602412191;s:8:"modified";i:1606062160;}s:7:"creator";s:4:"ctfa";s:4:"user";s:4:"ctfa";s:11:"last_change";a:8:{s:4:"date";i:1606062160;s:2:"ip";s:12:"64.120.89.34";s:4:"type";s:1:"E";s:2:"id";s:14:"trigger_分享";s:4:"user";s:4:"ctfa";s:3:"sum";s:0:"";s:5:"extra";s:0:"";s:10:"sizechange";i:27;}s:11:"contributor";a:1:{s:4:"ctfa";s:4:"ctfa";}s:8:"relation";a:2:{s:10:"references";a:4:{s:26:"運石基本_inmud_trigger";b:1;s:32:"defend_and_fishing_inmud_trigger";b:1;s:22:"kingwar_運糧_trigger";b:1;s:25:"zmud_運鏢_trigger_alias";b:1;}s:10:"firstimage";s:0:"";}s:8:"internal";a:2:{s:5:"cache";b:1;s:3:"toc";b:1;}s:11:"description";a:1:{s:8:"abstract";s:260:"inmud trigger 優點:
+
+1. 可以加上 wedmud 20% bonus
+
+2. unset trigger_no_busycheck 自動等 busy 完先行下一步.
+
+inmud trigger 缺點:
+
+1. 難防 flood trigger 
+
+2. trigger 及 alias 有上限 (trigger 大約 20 個, alias 大約 300)
+
+Inmud trigger:";}}s:10:"persistent";a:5:{s:4:"date";a:2:{s:7:"created";i:1602412191;s:8:"modified";i:1606062160;}s:7:"creator";s:4:"ctfa";s:4:"user";s:4:"ctfa";s:11:"last_change";a:8:{s:4:"date";i:1606062160;s:2:"ip";s:12:"64.120.89.34";s:4:"type";s:1:"E";s:2:"id";s:14:"trigger_分享";s:4:"user";s:4:"ctfa";s:3:"sum";s:0:"";s:5:"extra";s:0:"";s:10:"sizechange";i:27;}s:11:"contributor";a:1:{s:4:"ctfa";s:4:"ctfa";}}}

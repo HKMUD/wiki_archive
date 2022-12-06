@@ -436,12 +436,9 @@ __你軍中職位限制你能領取的max reward，所以務必盡早提升__
 
 在裡面基本上有三種方法加 "reward" (咩都唔做都有 500)
 
-1. 押糧 (lingming houqin-baozhang): 每次 500, 完成 5 次已經 max
-
-2. 領兵攻擊敵軍 (gongji <target> with <陣法, e.g. yanxing> & <戰法, e.g. fenxun>): 每一下攻擊/被蒙兵攻擊 會加 2-5, 要攻擊先要練兵 (lingming xunlian-bubing/qibing/gongnu) 元帥可帶最多 15 營兵, 不過由 0 練到 15 要 11-12 分鐘, 而每當你當打中扣氣
-(即使只係擦傷) 都會損失士兵.
-
-3. 殺死敵軍: 敵軍死亡時 killer 可加: junguan 150, weidui 200, kehan 50
+  - 押糧 (lingming houqin-baozhang): 每次 500, 完成 5 次已經 max
+  - 領兵攻擊敵軍 (gongji <target> with <陣法, e.g. yanxing> & <戰法, e.g. fenxun>): 每一下攻擊/被蒙兵攻擊 會加 2-5, 要攻擊先要練兵 (lingming xunlian-bubing/qibing/gongnu) 元帥可帶最多 15 營兵, 不過由 0 練到 15 要 11-12 分鐘, 而每當你被打中扣氣(即使只係擦傷)都會損失士兵.
+  - 殺死敵軍: 敵軍死亡時 killer 可加: junguan 150, weidui 200, kehan 50
 
 由於蒙兵數量有限加上 offline 時蒙兵不會停低攻擊你, 所以一般 robot 押糧比較方便. auto_war 之下大約 4 分鐘會完成一次. 想加速亦可以手動行去 青龍內門 再返回元帥帳營.
 

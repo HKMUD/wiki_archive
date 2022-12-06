@@ -1,18 +1,9 @@
-此為一個基本運石 inmud trigger (6 trigger, 79 alias), 試行咗一日 200 次, 石料充足的話順利運行. 石料不足要 mine 時請自行調整.
+此為一個基本運石 inmud trigger (6 trigger, 79 alias), 石料充足的話順利運行. 石料不足要 mine 時請自行調整.
 
 效能: 比 zmud trigger 略慢, 測試角色 只有 special taxue 減忙亂. 一分十多秒運一趟 (路線經長城要過大草原, 每次 reboot 要再確認其中一步)
 
-__inmud trigger 優點:__ 
+**如有其他人用同一條路線的話會塞車, 最慢的一個會拖慢所有人. 如沒有任何減忙亂或加技能(趕車技巧)等級的話需要兩分鐘以上才完成一趟.**
 
-1. 可以加上 wedmud 20% bonus
-
-2. unset trigger_no_busycheck 自動等 busy 完先行下一步.
-
-__inmud trigger 缺點:__
-
-1. 難防 flood trigger (此版本並沒有任何 flood trigger 對應方法)
-
-2. trigger 及 alias 有上限 (trigger 大約 20 個, alias 大約 300 (好似係)), 應該有方法減少 alias 數目, 但我反正未到上限就唔改 la
 
 __以下為 6 個 trigger:__
 

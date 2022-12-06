@@ -22,12 +22,23 @@ white wisdom set: char lv 10 之後可裝備, 可以 rideto player shop 睇睇�
   * ( 7) 紫金學習勛章 learn 60 物品 提升每次學習次數300
   * ( 34) 天賦聰穎 clever 20 先天技能 先天技能，最多可購買八個
 
-十倍 bonus (暫時常駐) 之下可學 5500 次
+十倍 bonus (暫時常駐) 之下可學 5500 次, 再加上 webmud 20% bonus 可學 6600 次 
 
 另外高 武學修養(martial-cognize) 等級亦會令武學技能學習難度降低.
 
 由於 釣魚 job 不需任何技能(詳見 cake 的新手指南), 可以先 ro 到 40 lv 以上 (先用 dummy 做 task 收齊刑天套裝更好), <del>拾冰</del>運石賺體會 derive limit martial-cognize. 加上幾千級 literate 之後即可輕鬆練技能.
 
+__參考數據:__
+
+【學習效果】      465%
+
+【悟性】72 |2555
+
+武學修養 (martial-cognize)               - 返璞歸真  5927/ 86%
+
+用 webmud 學習 6600 次難度 0 武技(如基本武技, 特殊武技可用 combat 查看) 可學到 3016 級
+
+另外第一世只用以上裝備即使 limit literate, martial-cognize 亦只可學到 35xx 級, 差些少才到 3600.
 
 ----
 
@@ -43,6 +54,7 @@ help pub_skill 入面寫既大致上都應該無錯既以下補充幾點
   - 祁連五絕指: 無開放
   - 胡家拳法: 好似要胡家弟子才可讀胡家拳經
   - 五虎斷門刀: 加入天地會,找李力世學習即可。 加入天地會(留意要正神,否則會畀陳近南 autokill) 後可找玄貞道長 (rideto beijing, w, w, w, s, s, s, s, s) 學齊雲龍門幾乎所有 skill: 雲龍鞭法 (yunlong-bian) 雲龍劍 (yunlong-jian) 雲龍身法 (yunlong-shenfa) 雲龍神功 (yunlong-shengong) 雲龍手 (yunlong-shou) 雲龍爪 (yunlong-zhua) 另加 雲龍心法 (yunlong-xinfa) , 不過無得學 perform (其實拜入雲龍以上技能都係無 perform 可以學)
+  - 2022-05-07 更新: 少林武技: 當舖不能 pawn wuji, 要集齊各種 wuji 只可不斷等房間更新, 或找高手借. 如想自行集齊可在藏經閣 ride rec, 間中 rideto 即可收集.
 
 
 ----
@@ -62,7 +74,7 @@ help pub_skill 入面寫既大致上都應該無錯既以下補充幾點
   - 金 雁 功 (jinyan-gong)在終南山太乙池 jump chi, swim
   - 狂風刀法 (kuangfeng-blade)【江湖】xx:xx 有人發現「萬里獨行」田伯光(tian boguang)出現在華山腳下(華山一帶)一帶活動。, rideto huashan, nw, kill tian 隨機 drop book, 學至一定等級自動習得 perform
   - 昊 天 掌 (haotian-zhang)全真派技能, 要開 dummy 拜入全真找孫不二詢問拿書讀
-  - 玄天無情指 (xuantian-zhi)梅莊(無開放)黑白子技能, rideto meizhuan, n, w, push eye, jump shu jia, get chou, tear hong chou 得血棋衣 (或者開迷宮寶箱), 可讀至 100 級
+  - 玄天無情指 (xuantian-zhi)梅莊(無開放)黑白子技能, rideto meizhuang, n, w, push eye, climb ti zi, jump shu jia, get chou, tear hong chou 得血棋衣 (或者開迷宮寶箱), 可讀至 100 級
   - 千蛛萬毒手 (qianzhu-wandushou) (光明磊落 和 狡黠多變 不能學)去五毒黑森林入面虎穴深處(rideto wudu,w,w,wd,wd,w,nw,nw,n,n,cross,w,ne,s,s,enter,s), sousuo bone 找到銅牌 (如果有其他人攞咗要等現實時間一日先會再有)之後買火折火把, 去密室 (rideto wudu, w, w, wd, wd, su, s, kill he,s,s,climb wall) dian huo ba, insert tong pai, think wall 可學 (留意每升一級有機會減一點容貌, 最後會淨返 5 點)那裡 open xia 可拿到秘笈學(yaujiu) perform
   - 紫金錘法 (zijin-chuifa)去日月神教找童百熊 (rideto beijing,w,w,n,n,w,w,w,w,w,w,w,sw,w,n,su,s,s,s) 詢問紫金錘之後再問紫金錘法, 此處有 bug, 會話送本紫金錘法畀你但又自己 keep 住, 要自己搶過嚟
   - 太祖長拳 (changquan) 飛檐走壁 (feiyan-zoubi) 郭氏心法 (guoshi-xinfa)襄陽郭靖傳授, 要學都幾麻煩, 以下係code// 隐藏情节：郭靖教授三门特殊武功if( query("mark/guofu_ok", ob)//①确认被收容于郭府&& query("mark/guofu_job", ob)>200//②郭府工作总量大于两百&& query("combat_exp", ob)>10000//③确认经验值在一万和两万之间&& query("combat_exp", ob)<20000&& !query_temp("job_name", ob)//④此时没有领取工作&& !query("family/family_name", ob)//⑤没有拜师&& !query("can_learn/3skills/guojing", ob)//⑤保证以前未触发此情节
@@ -71,7 +83,7 @@ help pub_skill 入面寫既大致上都應該無錯既以下補充幾點
   - 黯然銷魂掌 (sad-strike) 男角色結婚後, 妻子被其他玩家殺三次後可問楊過習得.
   - 幻魔身法 (huanmo-shenfa) 找 拿錢買命 學習.
   - 狩獵技巧 (hunting) 找衡山獵人 詢問.
-  - 迷蹤猴拳 (mizong-houquan) 找到峨嵋山上的猴王打, 在打死猴王前被打中三十次以上有機會習得.
+  - 迷蹤猴拳 (mizong-houquan) 找到峨嵋山上的猴王打, 在打死猴王前被打中三十次以上有機會習得. **(需 >100k 經驗, >100 級基本拳法及基本內功, >1200 最大內力, >26 先天悟性, >24 先天身法)**
   - 基本箭法 (arrow) 詳見[[常見問題#10. 有關 基本箭法|這裡]]
   - 連珠箭法 (lianzhu-arrow) 消耗軍功向郭靖請教 (qingjiao lianzhu-arrow)
 

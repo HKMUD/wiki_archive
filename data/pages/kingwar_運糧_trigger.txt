@@ -1,0 +1,57 @@
+
+【火線軍情】大宋：XX在戰場上臨陣脫逃。
+
+用 inmud trigger offline 做 kingwar 的一大問題是 set 唔好的話會自動成為逃兵.
+
+問郭靖參軍後直到完 war 之前是不可以有任何時間 trigger stop 的 (注意 online 時是沒問題的, 但當 offline 時 trigger stop 即會 quit war).
+
+簡單的解決方法為避免 trigger stop, 即不用 rideto 去襄陽, 以下的 alias 會直接由揚州行去郭府.
+
+----
+
+
+你目前設定的環境變數有：
+
+auto_war              "YES"   (領命後自動運糧, 只需每完成一次後再次領命即可無限運糧.)
+
+trigger_no_busycheck  0
+
+
+
+----
+
+__以下為 3 個 trigger:__
+
+-----------------------------------------------
+
+觸發字符： 蒙古可汗大舉南侵，大宋派出
+
+觸發指令：warjoin01
+
+觸發字符：今後你用 warjoin 來替代 
+
+觸發指令：warjoin
+
+觸發字符：你的糧草及時支援了大軍的補給....
+
+觸發指令：warhq
+
+-----------------------------------------------
+
+__以下為 4 個 alias:__
+
+-----------------------------------------------
+
+warask          = ask guo jing about 參軍
+
+warhq           = do lingming houqin-baozhang,2 s,16 w
+
+warjoin01       = do rideto yangzhou,trigger start,8 s,w,7 n,alias warjoin do warjoin02
+
+warjoin02       = do w,4 n,warask2,warask,lingming houqin-baozhang,2 s,9 w
+
+
+----
+
+另外一般會加一個 trigger 及 alias 用 perform 殺江洋大盜. 注意 江洋大盜 技能等級會隨你的經驗上升, 一般如有武功上限的 70% 技能等級的話應可輕鬆殺死對手. 請根據自身技能調整.
+

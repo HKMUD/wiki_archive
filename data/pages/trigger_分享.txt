@@ -1,0 +1,25 @@
+**inmud trigger 優點:**
+
+1. 可以加上 wedmud 20% bonus
+
+2. unset trigger_no_busycheck 自動等 busy 完先行下一步.
+
+**inmud trigger 缺點:**
+
+1. 難防 flood trigger 
+
+2. trigger 及 alias 有上限 (trigger 大約 20 個, alias 大約 300)
+
+
+
+__Inmud trigger:__
+
+[[運石基本 inmud trigger]]
+
+[[defend and fishing inmud trigger]]
+
+[[kingwar_運糧_trigger]]
+
+__Zmud trigger:__
+
+[[zmud 運鏢 trigger alias]]

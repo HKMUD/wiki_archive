@@ -1,0 +1,116 @@
+三轉後如要練到等級上限 (2020-10-11 時是 320 級), 正常情況下 defend 的效率應該是最高的, 加上第四世時 webmud 實際有 33% bonus, 這裡分享一個簡易 defend inmud trigger, 無 defend job 時會轉換成 fishing.  
+
+首先要留意以下幾點:
+  - 這 trigger **必須在線運行**, 因為殺目標時不會使用目標 id, 而是靠目標想殺死你而觸發戰鬥, 但是當離線練功時目標並不會 autokill. **(如斷線會不斷生成目標而又殺不到, 這樣會拖慢整個 server, 所以使用時請定時檢查 webmud 是否維持在線.)**
+  - defend job 目標接近 1000 級技能, 而且低經驗時效率很差, 建議 60 級後才開紿 defend.
+  - 技能方面建議使用 call die perform 加普通攻擊有毒的空手技能, 但注意部分 call die perform 如九陰神功的 perform zhua 直接殺死會無經驗, 如不想找另一個 call die 可在 call die 前使用另一 perform 先打中目標一下解決這問題.  
+  - 部分門派沒有 defend job, 而且各門派的路徑當然不同, 可以看 [[https://github.com/HKMUD/NT6/blob/master/nitan/include/defend.h|code /include/defend.h]] 查看目標會在那些地點出現.
+  - 以下用全真教的 defend job 加上去五毒教釣魚作例子, 運行原理是每行一步等兩 tick 之後 perform, 如打中人會再次 perform, 如不在戰鬥中則行去另一格再重覆以上步驟. 
+  - Fishing 部分要在 qiankun bag 中準備大量魚餌, 身上準備足夠釣竿.
+  - 已知問題: 如出 defend 時段完結的門派信息時正好戰鬥中會因不能 rideto 而去不到釣魚. 
+
+實例: 裝備用刑天套裝, 加上常備雙倍經驗和幫派經驗 bonus, 100 級後可以大概每日可以升 5 級. (每日大概在線十六小時, 如可二十四小時在線會更快.)
+
+----
+
+====== Defend trigger 6 個 ======
+
+
+  * 觸發字符：【全真教】王重陽(wang chongyang)：聽說
+    * 觸發指令：defendstart
+
+  * 觸發字符：今後你用 defendwait 來替代
+    * 觸發指令：defendwait
+
+  * 觸發字符：只見你這一拳把他飛了出去，重重的摔在地上，吐血不止！ **(這個是七傷拳 perform shang 的成功信息, 可用其他 perform 代替)**
+    * 觸發指令：defendkill
+
+  * 觸發字符：「九陰神爪」只能對戰鬥中的對手使用。**(這個是九陰神功 perform zhua 當不是戰鬥中時的失敗信息, 可用其他 perform 代替)**
+    * 觸發指令：defendstep
+
+  * 觸發字符：你的守衛門派任務結束。
+    * 觸發指令：defendstart2
+
+  * 觸發字符：【全真教】王重陽(wang chongyang)：有賴各位弟子齊心合力，終於擊退外敵，聲威大振！
+    * 觸發指令：defendend
+
+====== Fishing trigger 5 個 ======
+
+
+  * 觸發字符：你的浮子忽然劇烈的震盪起來。
+    * 觸發指令：fish1
+
+  * 觸發字符：你心中微微一動，對武學的理解又深了一層。
+    * 觸發指令：fish2
+
+  * 觸發字符：你從如意乾坤袋裡取出一塊魚餌。
+    * 觸發指令：fish3
+
+  * 觸發字符：看起來水行俠想殺死你！
+    * 觸發指令：fishkill
+
+  * 觸發字符：艄公說道：「到啦，上岸吧。」隨即把一塊踏腳板搭上堤岸。
+    * 觸發指令：fish2
+
+
+----
+
+====== Defend alias 22 個 ======
+
+
+defendend      = do trigger stop,halt,rideto wudu,w,w,wd,wd,w,nw,nw,n,n,trigger start,fish2,alias defendstart2
+
+defendkill     = do perform cuff.shang,perform claw.zhua
+
+defendstart    = do halt,trigger stop,rideto wang,trigger start,finish wang chongyang,defend wang chongyang,alias defendstep do defendstep01,defendwait1,alias defendstart2 do defendstart
+
+**(rideto wang 是到王重陽那裡, 需要 ride rec)**
+
+defendstep01    = do trigger stop,rideto quanzhen,trigger start, defendwait1,alias defendstep do defendstep02
+
+defendstep02    = do wd,w, defendwait1,alias defendstep do defendstep03
+
+defendstep03    = do e,eu, defendwait1,alias defendstep do defendstep04
+
+defendstep04    = do knock gate,e, defendwait1,alias defendstep do defendstep05
+
+defendstep05    = do n, defendwait1,alias defendstep do defendstep06
+
+defendstep06    = do e, defendwait1,alias defendstep do defendstep07
+
+defendstep07    = do e, defendwait1,alias defendstep do defendstep08
+
+defendstep08    = do s, defendwait1,alias defendstep do defendstep09
+
+defendstep09    = do w, defendwait1,alias defendstep do defendstep10
+
+defendstep10    = do s,w, defendwait1,alias defendstep do defendstep11
+
+defendstep11    = do n,4 e, defendwait1,alias defendstep do defendstep12
+
+defendstep12    = do e, defendwait1,alias defendstep do defendstep13
+
+defendstep13    = do e, defendwait1,alias defendstep do defendstep14
+
+defendstep14    = do 2 e, defendwait1,alias defendstep do defendstep15
+
+defendstep15    = do ne, defendwait1,alias defendstep do defendstep16
+
+defendstep16    = do ne, defendwait1,alias defendstep do defendstep17
+
+defendstep17    = do e,n,2 e,s,enter,finish wang chongyang,defend wang chongyang, defendwait1,alias defendstep do defendstep01
+
+defendwait1     = do alias defendwait do defendwait2
+
+defendwait2     = do defendkill,alias defendwait
+
+====== Fishing alias 4 個 ======
+
+
+fish1           = do draw gan
+
+fish2           = do take 67 1  
+
+fish3           = do set trigger_no_busycheck 1,fish
+
+fishkill       = do bei none,bei unarmed,halt,2 perform dang,yell boat,bei none,bei cuff,set trigger_no_busycheck 0

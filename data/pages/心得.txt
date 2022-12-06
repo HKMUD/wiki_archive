@@ -14,15 +14,19 @@
 | [[從hkmud到vbmud]]            | 萊茵哈特(reinhard)  |
 | [[離線練功心得]]                  | 萊茵哈特(reinhard)  |
 | [[淺談以轉世為目標的升級及練功心得]]        | 萊茵哈特(reinhard)  |
+| [[新手練功建議]]                  | 玉衡風(ctfa)       |
 | [[技能]]                      | 玉衡風(ctfa)       |
 | [[製藥]]                      | 玉衡風(ctfa)       |
 | [[裝備]]                      | 玉衡風(ctfa)       |
-| [[運石基本 inmud trigger]]      | 玉衡風(ctfa)       |
-| [[zmud 運鏢 trigger alias]]   | 玉衡風(ctfa)       |
+| [[trigger 分享]]              | 玉衡風(ctfa)       |
 | [[常見問題]]                    | 玉衡風(ctfa)       |
+| [[轉世重生注意事項]]                | 玉衡風(ctfa)       |
 | [[比悟迪轉世紀錄]]                 | 比悟迪(szesze)     |
 | [[丐幫心得]]                    | 邪王(darkzu)      |
 | [[mudlet設定]]                | J.              |
+
+=== Reinhard ===
+轉世重生之綠柳山莊：餘數定理解謎，[[https://hkmud.com/%E9%A4%98%E6%95%B8%E5%AE%9A%E7%90%86%E8%A7%A3%E8%AC%8E|請按此進]]。
 
 === Emoon ===
 資料未算多，先分享心得

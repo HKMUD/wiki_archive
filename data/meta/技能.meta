@@ -1,13 +1,11 @@
-a:2:{s:7:"current";a:6:{s:4:"date";a:2:{s:7:"created";i:1592555761;s:8:"modified";i:1579808747;}s:4:"user";s:0:"";s:7:"creator";s:0:"";s:8:"relation";a:2:{s:10:"references";a:4:{s:6:"雜學";b:1;s:18:"知識技能大全";b:1;s:19:"武學技能-相關";b:1;s:12:"技能組合";b:1;}s:10:"firstimage";s:0:"";}s:8:"internal";a:2:{s:5:"cache";b:1;s:3:"toc";b:1;}s:11:"description";a:1:{s:8:"abstract";s:357:"此條目下 google sheet 都可以評論, 歡迎補充資料.
+a:2:{s:7:"current";a:8:{s:4:"date";a:2:{s:7:"created";i:1592555761;s:8:"modified";i:1603610682;}s:4:"user";s:0:"";s:7:"creator";s:0:"";s:11:"last_change";a:8:{s:4:"date";i:1603610682;s:2:"ip";s:12:"64.120.89.18";s:4:"type";s:1:"E";s:2:"id";s:6:"技能";s:4:"user";s:4:"ctfa";s:3:"sum";s:0:"";s:5:"extra";s:0:"";s:10:"sizechange";i:0;}s:11:"contributor";a:1:{s:4:"ctfa";s:4:"ctfa";}s:8:"relation";a:2:{s:10:"references";a:4:{s:6:"雜學";b:1;s:18:"知識技能大全";b:1;s:19:"武學技能-相關";b:1;s:12:"技能組合";b:1;}s:10:"firstimage";s:0:"";}s:8:"internal";a:2:{s:5:"cache";b:1;s:3:"toc";b:1;}s:11:"description";a:1:{s:8:"abstract";s:355:"此條目下 google sheet 都可以評論, 歡迎補充資料.
 
 可學技能列表:
 
-不包括玩家自創武功, 共 644 個技能 (部分未驗證, 其中 5 個睇到但係學唔到)
-
-
+不包括玩家自創武功, 共 646 個技能 (部分未驗證, 其中 5 個睇到但係學唔到)
 
 <https://docs.google.com/spreadsheets/d/1ctibVip4eZbWDXPWPNjIj6YQCsmOPaWf6Mk4ugnRFH4/edit?usp=sharing>
 
 ----------
 
-可以學技能的 npc 列表 (中文名字未完成)";}}s:10:"persistent";a:3:{s:4:"date";a:1:{s:7:"created";i:1592555761;}s:4:"user";s:0:"";s:7:"creator";s:0:"";}}
+可以學技能的 npc 列表 (中文名字未完成)";}}s:10:"persistent";a:5:{s:4:"date";a:2:{s:7:"created";i:1592555761;s:8:"modified";i:1603610682;}s:4:"user";s:0:"";s:7:"creator";s:0:"";s:11:"last_change";a:8:{s:4:"date";i:1603610682;s:2:"ip";s:12:"64.120.89.18";s:4:"type";s:1:"E";s:2:"id";s:6:"技能";s:4:"user";s:4:"ctfa";s:3:"sum";s:0:"";s:5:"extra";s:0:"";s:10:"sizechange";i:0;}s:11:"contributor";a:1:{s:4:"ctfa";s:4:"ctfa";}}}

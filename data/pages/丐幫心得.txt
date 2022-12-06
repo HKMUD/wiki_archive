@@ -35,8 +35,8 @@ f: 成都
 ====== 如何昇袋:  ======
   - 經驗 > 10000
   - 到青竹林找簡長老, ask jian about 青竹令
-  - **隨便找一個跟自己同袋數之丐幫npc** , give xxx ling, 然後打7佢, 打嬴會給你破布
-  - 回簡長老處, give jian pobu
+  - **隨便找一個高自己一袋之丐幫npc (剛拜師時是"零袋")** , give xxx ling, 然後打7佢, 打嬴會給你破布
+  - 回簡長老處, give pobu to jian
 
 
 ====== 如何學降龍十八掌(dragon-strike):  ======
@@ -75,3 +75,4 @@ f: 成都
     * 龍嘯九天 perform dragon-strike.xiao (正氣 >= 8000000, 功積 10000) (轉世後可學, 習得後加先天臂力1點)
     * 天下無狗 perform dagou-bang.tian (ask hong 天下無狗, 得打狗棒譜, lingwu dgb book 多次直到完全領悟)
 
+**(以上並非實際 cmd, 使用 dragon-strike perform lei 的 cmd 為 perform strike.lei)**
